@@ -1,8 +1,11 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+$SamsungSharpSans: "SamsungSharpSans", sans-serif;
+
+@font-face {
+  font-family: $SamsungSharpSans;
+  src: url("./../assets/fonts/SamsungSharpSans-Bold.ttf");
+  font-weight: 700;
+}
+
+body {
+  background-color: crimson;
 }
