@@ -1,11 +1,1 @@
-$SamsungSharpSans: "SamsungSharpSans", sans-serif;
-
-@font-face {
-  font-family: $SamsungSharpSans;
-  src: url("./../assets/fonts/SamsungSharpSans-Bold.ttf");
-  font-weight: 700;
-}
-
-body {
-  background-color: crimson;
-}
+@import 'preset';
