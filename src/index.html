@@ -1,13 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="stylesheet" href="./scss/style.scss">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Euerkadevelopment</title>
-  </head>
-  <body>
-    <h2>TESTPAGE! [SASS(SCSS)/NPM]</h2>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="./img/logo.svg" alt="">
+                </span>
+            </div>
+            <i class='bx bx-menu toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text ">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-microchip icon' ></i>
+                            <span class="text nav-text">Custom ROM's</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-refresh icon'></i>
+                            <span class="text nav-text">Custom Recovery</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-chip icon' ></i>
+                            <span class="text nav-text">Eureka Kernel</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Support</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book icon' ></i>
+                            <span class="text nav-text">Guides</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                      <a href="#">
+                          <i class='bx bx-info-circle icon' ></i>
+                          <span class="text nav-text">About Us</span>
+                      </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="text logo-text" style="margin-left: 15px;">
+              <span class="profession">© Eurekadevelopment</span>
+          </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="text">Eurekadevelopment HOME</div>
+    </section>
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle")
+    toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+    });
+    </script>
+</body>
 </html>
+<script type="module" src="./js/imageflip.js"></script>    
+<script type="module" src="./js/main.js"></script>
+
