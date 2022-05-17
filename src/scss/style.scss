@@ -1,23 +1,136 @@
 @import 'preset';
+@import 'flip';
+@import 'social';
 
-$headerHeight: 5rem;
+$headerHeight: 10rem;
+$sidebarWidth: 35rem;
 $margin: 2rem;
 
 $screen-mid: 768px;
 $screen-normal: 992px;
 $screen-large: 1200px;
 
+@mixin small {
+	@media (max-width: #{$screen-mid}) {
+		@content;
+	}
+}
+
+@mixin mid {
+	@media (min-width: #{$screen-mid}) {
+		@content;
+	}
+}
+
+@mixin normal {
+	@media (min-width: #{$screen-normal}) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: #{$screen-large}) {
+		@content;
+	}
+}
+
 main {
 	width: 100%;
-	background-color: $second;
+	background-color: rgb(0, 0, 0);
 	min-height: 100vh;
 	font-size: 2rem;
+	color: white;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: flex-start;
+	align-items: center;
 	padding: $headerHeight 0 0 0;
-  }
+
+	.content {
+		display: flex;
+		justify-content: stretch;
+		align-items: stretch;
+		min-height: 100vh;
+		width: 100%;
+		max-width: 100rem;
+
+		@include small {
+			flex-direction: column;
+		}
+
+		@include mid {
+			flex-direction: column;
+		}
+
+		@include normal {
+			flex-direction: row;
+		}
+
+		@include large {
+			flex-direction: row;
+		}
+
+		.article-wrapper {
+      margin-top: -45px;
+			background-color: rgba(0, 0, 0, 0);
+			width: 100%;
+			padding: $margin;
+			.article {
+				min-height: 50vh;
+				margin: 0 0 $margin 0;
+        text-align: center;
+			}
+
+			.author {
+				min-height: 10vh;
+				margin: 0 0 $margin 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+			.comment {
+				min-height: 0vh;
+				background-color: rgba(0, 128, 0, 0);
+			}
+		}
+
+		aside {
+			background-color: rgba(0, 128, 0, 0);
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-direction: column;
+			padding: $margin;
+
+			@include small {
+				width: 100%;
+			}
+
+			@include mid {
+				width: 100%;
+			}
+
+			@include normal {
+				width: $sidebarWidth;
+			}
+
+			@include large {
+				width: $sidebarWidth;
+			}
+
+			section {
+				min-height: 25rem;
+				width: 100%;
+				margin: 0 0 $margin 0;
+				background-color: yellow;
+				color: black;
+				&:last-child {
+					margin: 0 0 0 0;
+				}
+			}
+		}
+	}
 
 	header {
 		width: 100%;
@@ -26,31 +139,14 @@ main {
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: #000000;
+		background-color: blue;
 		z-index: 3;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-
-	section {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		article {
-			width: 90%;
-			max-width: 100rem;
-			min-height: 100vh;
-			background-color: $second;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-	}
+}
 
 *{
     margin: 0;
@@ -64,7 +160,7 @@ main {
     --body-color: #000000;
     --sidebar-color: #000000;
     --primary-color: #08f;
-    --primary-color-light: #3a3b3c;
+    --primary-color-light: #000000;
     --toggle-color: #fff;
     --text-color: #ccc;
 
@@ -110,7 +206,7 @@ body{
     list-style: none;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .sidebar header .image,
@@ -136,7 +232,7 @@ body{
 }
 
 .sidebar .text{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
@@ -157,35 +253,35 @@ body{
 .sidebar header .logo-text{
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 
 header .image-text .profession{
-    font-size: 22px;
-    margin-top: -2px;
+    font-size: 18px;
+    margin-top: -10px;
+    left: 90px;
     display: block;
+    position: absolute;
 }
 
 .sidebar header .image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;    
 }
 
 .sidebar header .image img{
     width: 64px;
     border-radius: 0px;
-    margin-top: 40px;
     transition: width 0.3s;
 }
 
 .sidebar header .toggle{
     position: absolute;
     top: 50%;
-    right: -25px;
+    right: -15px;
     transform: translateY(-50%) rotate(180deg);
     height: 30px;
     width: 30px;
-    background-color: #000000;
+    background-color: #00000000;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -194,12 +290,11 @@ header .image-text .profession{
     font-size: 22px;
     cursor: pointer;
     transition: var(--tran-05);
-    margin-top: 20px;
 }
 
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 .sidebar.close .image img {
@@ -262,7 +357,7 @@ header .image-text .profession{
 
 .home{
     position: absolute;
-    top: 0;
+    top: 100rem;
     top: 0;
     left: 250px;
     height: 100vh;
@@ -270,15 +365,10 @@ header .image-text .profession{
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
-.home .text{
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    padding: 12px 60px;
-}
 
 .sidebar.close ~ .home{
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
 }
+
