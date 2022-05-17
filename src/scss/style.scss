@@ -36,7 +36,7 @@ $screen-large: 1200px;
 
 main {
 	width: 100%;
-	background-color: rgb(0, 0, 0);
+	background-color: black;
 	min-height: 10vh;
 	font-size: 2rem;
 	color: white;
@@ -72,7 +72,7 @@ main {
 
 		.article-wrapper {
       margin-top: -45px;
-			background-color: rgba(0, 0, 0, 0);
+			background-color: black;
 			width: 100%;
 			padding: $margin;
 			.article {
@@ -91,7 +91,7 @@ main {
 
 			.comment {
 				min-height: 0vh;
-				background-color: rgba(0, 0, 0, 0);
+				background-color: black;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -99,7 +99,7 @@ main {
 		}
 
 		aside {
-			background-color: rgba(0, 0, 0, 0);
+			background-color: black;
 			display: flex;
 			justify-content: flex-start;
 			align-items: flex-start;
@@ -126,7 +126,7 @@ main {
 				min-height: 25rem;
 				width: 100%;
 				margin: 0 0 $margin 0;
-				background-color: rgb(0, 0, 0);
+				background-color: black;
 				color: black;
 				&:last-child {
 					margin: 0 0 0 0;
@@ -142,7 +142,7 @@ main {
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: rgb(0, 0, 0);
+		background-color: black;
 		z-index: 3;
 		display: flex;
 		flex-direction: column;
@@ -161,15 +161,16 @@ main {
 :root{
     /* ===== Colors ===== */
     --body-color: #000000;
-    --sidebar-color: #000000;
+    --sidebar-color: #00000000;
     --primary-color: #08f;
-    --primary-color-light: #000000;
-    --toggle-color: #fff;
+    --primary-color-light: #08f;
+    --toggle-color: #08f;
     --text-color: #ccc;
     --tran-03: all 0.3s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
+    background-color: #000000;
 }
 
 body{
@@ -192,6 +193,7 @@ body{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;  
+    background-color: #00000000;
 }
 .sidebar.close{
     width: 90px;
@@ -203,6 +205,7 @@ body{
     display: flex;
     align-items: center;
     margin-top: 18px;
+    background-color: #000000;
 }
 
 .sidebar header .image,
@@ -298,6 +301,7 @@ header .image-text .profession{
 
 .sidebar .menu{
     margin-top: 40px;
+    background-color: #000000;
 }
 
 .sidebar li a{
@@ -327,6 +331,7 @@ header .image-text .profession{
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
+    background-color: #000000;
 }
 .menu-bar::-webkit-scrollbar{
     display: none;
