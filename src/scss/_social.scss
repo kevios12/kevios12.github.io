@@ -1,150 +1,118 @@
-//variables
-$basic-dark-color: #212121;
-$basic-light-color: #00000000;
-$fb-color: #3b5998;
-$tw-color: #00aced;
-$g-plus: #dd4b39;
-$dribbble: #ea4c89;
-$pinterest: #cb2027;
-$insta: #bc2a8d;
-$in: #007bb6;
-$vimeo: #1ab7ea;
-$border-radius: 10px;
-$font-size: 25px;
+/*
+    Auther: Abdelrhman Said
+*/
 
-.container {
-  margin: 60px auto 0px auto;
-  text-align: center;
-  
-  h1 {
-    font: {
-      family: 'Roboto', sans-serif;
-      weight: 900;
-      size: 30px;
-    }
-    text-transform: uppercase;
-    color: $basic-dark-color;
-    letter-spacing: 3px;
-    
-    span {
-      display: inline-block;
-      
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        width: 34px;
-        height: 2px;
-        background-color: $basic-dark-color;
-        margin: 0px 0px 0px 2px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+@media all and (max-width:30em){
+    .wrapper {
+        display:table-column;
+        list-style: none;
       }
-    }
-  }
+}
+.wrapper .icon {
+  position: relative;
+  background: #ffffff00;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.effect {
-  width: 100%;
-  padding: 50px 0px 70px 0px;
-  background-color: $basic-dark-color;
-  
-  h2 {
-    color: $basic-light-color;
-    font: {
-      family: 'Playfair Display', serif;
-      weight: 400;
-      size: 25px;
-    }
-    letter-spacing: 3px;
-  }
-  
-  &:nth-child(2) {
-    margin-top: 50px;
-  }
-  
-  &:nth-child(2n+1) {
-    background-color: $basic-light-color;
-    
-    h2 {
-      color: $basic-dark-color;
-    }
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-  }
-  
-  a {
-    
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.effect {  
-  a {
-    text-decoration: none !important;
-    color: $basic-light-color;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: $border-radius;
-    margin-right: 20px;
-    font-size: $font-size;
-    overflow: hidden;
-    position: relative;
-    
-    i {
-      position: relative;
-      z-index: 3;
-    }
-    
-    &.fb {
-      background-color: $fb-color;
-    }
-    
-    &.tw {
-      background-color: $tw-color;
-    }
-    
-    &.g-plus {
-      background-color: $g-plus;
-    }
-    
-    &.dribbble {
-      background-color: $dribbble;
-    }
-    
-    &.pinterest {
-      background-color: $pinterest;
-    }
-    
-    &.insta {
-      background-color: $insta;
-    }
-    
-    &.in {
-      background-color: $in;
-    }
-    
-    &.vimeo {
-      background-color: $vimeo;
-    }
-  }
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.effect.claudio {
-  a { 
-    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0s;
-    
-    &:hover {
-      transform: scale(1.2);
-      border-bottom-left-radius: 50%;
-      border-top-right-radius: 50%;
-    }
-  }
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .paypal:hover,
+.wrapper .paypal:hover .tooltip,
+.wrapper .paypal:hover .tooltip::before {
+  background: #1256af;
+  color: #ffffff;
+}
+
+.wrapper .sourceforge:hover,
+.wrapper .sourceforge:hover .tooltip,
+.wrapper .sourceforge:hover .tooltip::before {
+  background: #8d590b;
+  color: #ffffff;
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background: #1884c7;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}

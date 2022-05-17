@@ -20,9 +20,9 @@ html
 *
     box-sizing: border-box
 .flex-card-wrapper
-    width: 90%
+    width: 100%
     max-width: 60rem
-    height: 70vh
+    height: 60vh
     max-height: 50rem
     display: flex
     justify-content: space-between
@@ -42,7 +42,7 @@ html
         background-repeat: no-repeat
 
         &.active
-            width: 70%
+            width: 60%
 
             .overlay
                 h3, p
@@ -54,23 +54,43 @@ html
                     height: 5rem
 
                     img
-                        width: 2.5rem
-                        height: 2.5rem
+                        width: 3.0rem
+                        height: 3.0rem
 
+        @media all and (max-width:30em)
+            &.active
+            width: 6%
+
+            .overlay
+                h3, p
+                    opacity: 1
+                    transform: translateX(0)
+
+                .icon
+                    width: 5rem
+                    height: 5rem
+
+                    img
+                        width: 2.0rem
+                        height: 2.0rem
+        
         &.bild-1
-            background-image: url(https://assets.codepen.io/907368/flexcard-1.jpg)
-
-        &.bild-2
-            background-image: url(https://assets.codepen.io/907368/flexcard-2.jpg)
+            background-image: url('./img/ek/a12.png')
 
         &.bild-3
-            background-image: url(https://assets.codepen.io/907368/flexcard-3.jpg)
+            background-image: url('./img/ek/home.png')
+
+        &.bild-2
+            background-image: url('./img/ek/smparts.png')
 
         &.bild-4
-            background-image: url(https://assets.codepen.io/907368/flexcard-4.jpg)
+            background-image: url('./img/ek/ekm.png')
+
+        &.bild-6
+            background-image: url('./img/ek/aroma2.png')
 
         &.bild-5
-            background-image: url(https://assets.codepen.io/907368/flexcard-4.jpg)
+            background-image: url('./img/ek/monet.png')
 
         &:last-child
             margin: 0 0 0 0
@@ -106,7 +126,7 @@ html
                     transition: 450ms all ease-in-out
 
             h3
-                top: 0
+                top: 2rem
                 font-size: 1.8rem
                 transition: 350ms 200ms all ease-in-out
 
@@ -122,3 +142,14 @@ html
                 width: 20rem
                 opacity: 0
                 transform: translateX(-15px)
+
+            @media all and (max-width:30em)
+             h3
+                top: 2rem
+                font-size: 1.2rem
+                transition: 350ms 200ms all ease-in-out
+
+            p
+                top: 4rem
+                font-size: 1rem
+                transition: 350ms 300ms all ease-in-out

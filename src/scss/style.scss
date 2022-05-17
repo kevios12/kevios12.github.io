@@ -37,7 +37,7 @@ $screen-large: 1200px;
 main {
 	width: 100%;
 	background-color: rgb(0, 0, 0);
-	min-height: 100vh;
+	min-height: 10vh;
 	font-size: 2rem;
 	color: white;
 	display: flex;
@@ -50,7 +50,7 @@ main {
 		display: flex;
 		justify-content: stretch;
 		align-items: stretch;
-		min-height: 100vh;
+		min-height: 10vh;
 		width: 100%;
 		max-width: 100rem;
 
@@ -76,7 +76,7 @@ main {
 			width: 100%;
 			padding: $margin;
 			.article {
-				min-height: 50vh;
+				min-height: 10vh;
 				margin: 0 0 $margin 0;
         text-align: center;
 			}
@@ -91,12 +91,15 @@ main {
 
 			.comment {
 				min-height: 0vh;
-				background-color: rgba(0, 128, 0, 0);
+				background-color: rgba(0, 0, 0, 0);
+        justify-content: center;
+        align-items: center;
+        display: flex;
 			}
 		}
 
 		aside {
-			background-color: rgba(0, 128, 0, 0);
+			background-color: rgba(0, 0, 0, 0);
 			display: flex;
 			justify-content: flex-start;
 			align-items: flex-start;
@@ -123,7 +126,7 @@ main {
 				min-height: 25rem;
 				width: 100%;
 				margin: 0 0 $margin 0;
-				background-color: yellow;
+				background-color: rgb(0, 0, 0);
 				color: black;
 				&:last-child {
 					margin: 0 0 0 0;
@@ -139,7 +142,7 @@ main {
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: blue;
+		background-color: rgb(0, 0, 0);
 		z-index: 3;
 		display: flex;
 		flex-direction: column;
@@ -163,18 +166,13 @@ main {
     --primary-color-light: #000000;
     --toggle-color: #fff;
     --text-color: #ccc;
-
-
-
-    /* ====== Transition ====== */
-    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.3s ease;
     --tran-05: all 0.3s ease;
 }
 
 body{
-    min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -184,7 +182,6 @@ body{
     color: #fff;
 }
 
-/* ===== Sidebar ===== */
  .sidebar{
     position: fixed;
     top: 0;
@@ -200,7 +197,6 @@ body{
     width: 90px;
 }
 
-/* ===== Reusable code - Here ===== */
 .sidebar li{
     height: 50px;
     list-style: none;
@@ -240,7 +236,6 @@ body{
 .sidebar.close .text{
     opacity: 0;
 }
-/* =========================== */
 
 .sidebar header{
     position: relative;
