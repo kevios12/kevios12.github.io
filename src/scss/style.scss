@@ -1,6 +1,8 @@
 @import 'preset';
 @import 'flip';
 @import 'social';
+@import 'boxes';
+@import 'profile';
 
 $headerHeight: 10rem;
 $sidebarWidth: 35rem;
@@ -371,4 +373,3 @@ header .image-text .profession{
     height: 100vh;
     width: calc(100% - 78px);
 }
-

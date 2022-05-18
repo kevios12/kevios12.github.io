@@ -1,0 +1,82 @@
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-gap: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: -150px;
+    margin-top: -15px;
+}
+.container .box {
+    position: relative;
+    background: rgba(34, 34, 34, 0);
+    padding: 0px 10px 15px;
+    text-align: center;
+    overflow: hidden;
+}
+.container .image img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 0px solid #08f;
+}
+.container .box h1 {
+    font-size: 25px;
+    color: #08f;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.container .box h2 {
+   font-size: 17px;
+   color: #fff;
+   text-transform: uppercase;
+   opacity: .4;
+   z-index: 1;
+   letter-spacing: .1em;
+}
+.container .box p {
+   color: #fff;
+   font-size: 15px;
+   line-height: 20px;
+   letter-spacing: .1em;
+   padding-top: 20px;
+}
+.icons {
+   text-decoration: none;
+   font-size: 25px;
+   padding-top: 10px;
+}
+.fa {
+   color: #fff;
+   padding: 10px;
+   margin-left: 5px;
+   text-align: center;
+}
+.fa:hover {
+   color: #08f;
+   transition: all .5s;
+}
+@media screen and (max-width: 900px) {
+    .container {
+        display: table-row;
+        padding: 10px 30px 10px;   
+        margin-top: -40px;
+    }
+    .container .box {
+        margin-bottom: 15px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+h1 :nth-child(1) {
+    color: white;
+    }
+    h1 :nth-child(2) {
+    color: #08f;
+    }
