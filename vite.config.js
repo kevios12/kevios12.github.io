@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+const { resolve } = require("path");
 
 export default defineConfig({
     base: '/ekweb/',
@@ -6,6 +7,12 @@ export default defineConfig({
     assetsInclude: ["./assets/**/*.*"],
     build: {
         emptyOutDir: true,
-        outDir: "../dist"
+        outDir: "../dist",
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, "./src/index.html"),
+                about: resolve(__dirname, "./src/about.html"),
+            },
+        },
     }
 })
