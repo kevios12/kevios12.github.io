@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+    <div class="splash">
+        <img class="fade-in" src="./img/eklogo.gif" alt="eklogo" width="250">
+      </div>
     <nav class="sidebar close nav">
         <header>
             <div class="image-text">
@@ -81,17 +84,16 @@
           </div>
         </div>
     </nav>
-
     <section class="home">
         <h1 style="font-size: 36px; color: white; margin-top: 25px;" align="center"><span>Our</span><span>Team</span></h1><br><br>
         <hr style="margin:0 auto;width:58%;height:1px;border-width:0;color:rgba(128, 128, 128, 0.288);background-color:rgba(128, 128, 128, 0.288)">
       <section class="author" style="justify-content: center;align-items: center;display: flex; margin-top: 51px;">
         <div class="container">
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/69016406?v=4" alt="">
                 </div>
-                <h1>Chatur Baij</h1>
+                <h1>Chatur Baji</h1>
                 <h2>Leader/Developer</h2>
                 <p>Galaxy A10 - BUSY!</p>
                 <div class="icons">
@@ -100,7 +102,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/88463214?v=4" alt="">
                 </div>
                 <h1>Gabriel260br</h1>
@@ -112,7 +114,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/69458352?v=4" alt="">
                 </div>
                 <h1>Roynatech</h1>
@@ -124,7 +126,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/10536991?v=4" alt="">
                 </div>
                 <h1>Kevios12</h1>
@@ -136,7 +138,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/76120412?v=4" alt="">
                 </div>
                 <h1>Chris Sunil</h1>
@@ -148,7 +150,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/51184041?v=4" alt="">
                 </div>
                 <h1>Neel0210</h1>
@@ -160,7 +162,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/98711335?v=4" alt="">
                 </div>
                 <h1>KineSight</h1>
@@ -171,7 +173,7 @@
                 </div>
             </div>
             <div class="box">
-                <div class="image">
+                <div class="image img-hover-zoom">
                     <img src="https://avatars.githubusercontent.com/u/96374040?v=4" alt="">
                 </div>
                 <h1>Alexandru S.</h1>
@@ -196,38 +198,8 @@
           </section>
         </section>
       </main>
-  </section>
-    <script>
-    const body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle")
-    toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-    });
-    </script>
-    <script>
-      const ACTIVECLASS = 'active';
-      const IMAGES = document.querySelectorAll('.flex-card-container');
-      IMAGES[0].classList.add(ACTIVECLASS);
-      function removeActiveClass() {
-        const elm = document.querySelector(`.${ACTIVECLASS}`)
-        if (elm) {
-        elm.classList.remove(ACTIVECLASS);
-      }
-    }
-    function addClass($event) {
-    $event.stopPropagation();
-    removeActiveClass();
-    const target = $event.currentTarget;
-    target.classList.add(ACTIVECLASS);
-    }
-      IMAGES.forEach(image => {
-    image.addEventListener('click', addClass);
-    })
-    </script>
- 
+  </section> 
 </body>
-</html>
-<script type="module" src="./js/imageflip.js"></script>    
+</html>  
 <script type="module" src="./js/main.js"></script>
 

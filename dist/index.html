@@ -9,10 +9,13 @@
     
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Euerkadevelopment</title>
-  <script type="module" crossorigin src="/ekweb/assets/style.7f2dd081.js"></script>
-  <link rel="stylesheet" href="/ekweb/assets/style.bbf84e36.css">
+  <script type="module" crossorigin src="/ekweb/assets/main.85a42ae2.js"></script>
+  <link rel="stylesheet" href="/ekweb/assets/main.6b928754.css">
 </head>
 <body>
+  <div class="splash">
+    <img class="fade-in" src="/ekweb/assets/eklogo.619f874d.gif" alt="eklogo" width="250">
+  </div>
     <nav class="sidebar close nav">
         <header>
             <div class="image-text">
@@ -35,7 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="index.html">
+                        <a href="#">
                             <i class='bx bx-microchip icon' ></i>
                             <span class="text nav-text">Custom ROM's</span>
                         </a>
@@ -184,36 +187,7 @@
         </section>
       </main>
   </section>
-    <script>
-    const body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle")
-    toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-    });
-    </script>
-    <script>
-      const ACTIVECLASS = 'active';
-      const IMAGES = document.querySelectorAll('.flex-card-container');
-      IMAGES[0].classList.add(ACTIVECLASS);
-      function removeActiveClass() {
-        const elm = document.querySelector(`.${ACTIVECLASS}`)
-        if (elm) {
-        elm.classList.remove(ACTIVECLASS);
-      }
-    }
-    function addClass($event) {
-    $event.stopPropagation();
-    removeActiveClass();
-    const target = $event.currentTarget;
-    target.classList.add(ACTIVECLASS);
-    }
-      IMAGES.forEach(image => {
-    image.addEventListener('click', addClass);
-    })
-    </script>
 </body>
-</html>
-    
+</html>   
 
 

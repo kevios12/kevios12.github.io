@@ -318,3 +318,16 @@ a[data-tooltip][data-position="bottom"]:after {
 	left: 5px;
 	margin-top: 4px;
 }
+
+.img-hover-zoom {
+    height: 130px;
+    overflow: hidden;
+  }
+  
+  .img-hover-zoom img {
+    transition: transform .4s ease;
+  }
+  
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+  }

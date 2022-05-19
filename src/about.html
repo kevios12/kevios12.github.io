@@ -11,6 +11,9 @@
     <title>Euerkadevelopment</title>
 </head>
 <body>
+  <div class="splash">
+    <img class="fade-in" src="./img/eklogo.gif" alt="eklogo" width="250">
+  </div>
     <nav class="sidebar close nav">
         <header>
             <div class="image-text">
@@ -114,37 +117,7 @@
         </section>
       </main>
   </section>
-    <script>
-    const body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle")
-    toggle.addEventListener("click" , () =>{
-    sidebar.classList.toggle("close");
-    });
-    </script>
-    <script>
-      const ACTIVECLASS = 'active';
-      const IMAGES = document.querySelectorAll('.flex-card-container');
-      IMAGES[0].classList.add(ACTIVECLASS);
-      function removeActiveClass() {
-        const elm = document.querySelector(`.${ACTIVECLASS}`)
-        if (elm) {
-        elm.classList.remove(ACTIVECLASS);
-      }
-    }
-    function addClass($event) {
-    $event.stopPropagation();
-    removeActiveClass();
-    const target = $event.currentTarget;
-    target.classList.add(ACTIVECLASS);
-    }
-      IMAGES.forEach(image => {
-    image.addEventListener('click', addClass);
-    })
-    </script>
- 
 </body>
 </html>
-<script type="module" src="./js/imageflip.js"></script>    
 <script type="module" src="./js/main.js"></script>
 
