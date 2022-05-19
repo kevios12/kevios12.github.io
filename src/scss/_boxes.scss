@@ -42,10 +42,16 @@
 }
 .pxc-avatar img {
   transition: all 600ms ease;
-  width: 242px;
-  height: 250px;
+  width: 241px;
+  height: 238px;
   box-shadow: 0 1px 1rem rgb(0, 0, 0);
   position: relative;
+  background: rgba(60, 60, 61, 0.048);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+  border: 2px solid rgba(83, 78, 78, 1);
 }
 
 @media screen and (max-width: 900px) {
