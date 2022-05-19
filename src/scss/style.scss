@@ -194,6 +194,7 @@ body{
     background: rgba(255, 255, 255, 0);
     transition: var(--tran-05);
     z-index: 100;  
+    margin-top: 10px;
 }
 .sidebar.close{
     width: 90px;
@@ -245,7 +246,6 @@ body{
 
 .sidebar header{
     position: relative;
-    
 }
 
 .sidebar header .image-text{
@@ -256,6 +256,7 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
+
 }
 
 header .image-text .profession{
@@ -269,6 +270,7 @@ header .image-text .profession{
 .sidebar header .image{
     display: flex;    
 }
+
 
 .sidebar header .image img{
     width: 64px;
