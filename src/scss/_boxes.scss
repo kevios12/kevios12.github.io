@@ -7,11 +7,13 @@
   border-radius: 6px;
   align-items: center;
 }
+
 @media screen and (min-width: 700px) {
   .plx-card.gold {
     height: 589px;
   }
 }
+
 @media screen and (max-width: 700px) {
   .plx-card {
     height: auto;
@@ -21,6 +23,7 @@
     margin: -40px 20px;
   }
 }
+
 .pxc-avatar {
   transition: all 600ms ease;
   display: flex;
@@ -31,6 +34,7 @@
   align-items: center;
   margin-left: 130px;
 }
+
 @media screen and (max-width: 700px) {
   .pxc-avatar {
     width: 100%;
@@ -40,6 +44,7 @@
     margin-left: 0px;
   }
 }
+
 .pxc-avatar img {
   transition: all 600ms ease;
   width: 241px;
@@ -60,12 +65,14 @@
     height: 125px;
   }
 }
+
 @media screen and (max-width: 700px) {
   .pxc-avatar img {
     margin-top: 95px;
     transform: rotate(90deg);
   }
 }
+
 .pxc-bg {
   transition: all 600ms ease;
   border-radius: 2px;
@@ -77,11 +84,13 @@
   background-size: cover;
   background-position: right;
 }
+
 @media screen and (max-width: 900px) {
   .pxc-bg {
     left: 50px;
   }
 }
+
 @media screen and (max-width: 700px) {
   .pxc-bg {
     left: 0;
@@ -91,6 +100,7 @@
     border-radius: 0;
   }
 }
+
 .pxc-subcard {
   transition: all 600ms ease;
   border-radius: 3px;
@@ -109,12 +119,14 @@
   -webkit-backdrop-filter: blur(3.4px);
   border: 1px solid rgba(83, 78, 78, 1);
 }
+
 @media screen and (max-width: 900px) {
   .pxc-subcard {
     margin-right: 120px;
     margin-left: -32px;
   }
 }
+
 @media screen and (max-width: 700px) {
   .pxc-subcard {
     margin: 25px 15px 30px 15px;
@@ -124,6 +136,7 @@
     flex: 1 0 auto;
   }
 }
+
 @media screen and (max-width: 700px) {
   .pxc-stopper {
     left: 0;
@@ -133,6 +146,7 @@
     border-radius: 0;
   }
 }
+
 .pxc-title {
   font-size: 32px;
   margin-bottom: 5px;
@@ -143,6 +157,7 @@
   flex: 0 0 auto;
   text-align: center;
 }
+
 @media screen and (max-width: 700px) {
   .pxc-title {
     font-size: 22px;
@@ -152,6 +167,7 @@
     margin-top: -20px;
   }
 }
+
 .pxc-sub {
   font-size: 14px;
   margin: 10px 0 8px 0;
@@ -160,11 +176,13 @@
   mask-image: linear-gradient(black 80%, transparent 100%);
   color: #ffffff;
 }
+
 @media screen and (max-width: 700px) {
   .pxc-sub {
     font-size: 13px;
   }
 }
+
 .pxc-feats {
   font-size: 12px;
   color: #ffffff;
@@ -175,6 +193,7 @@
   overflow: hidden;
   mask-image: linear-gradient(rgb(0, 0, 0) 100%, transparent 100%);
 }
+
 @media screen and (max-width: 700px) {
   .pxc-feats {
     font-size: 12px;

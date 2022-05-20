@@ -1,192 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d72bd4ed55.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,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" />
-    
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <title>Euerkadevelopment</title>
-  <script type="module" crossorigin src="/ekweb/assets/main.85a42ae2.js"></script>
-  <link rel="stylesheet" href="/ekweb/assets/main.467b84f8.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d72bd4ed55.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,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" />
+  
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+  <title>Euerkadevelopment</title>
+  <script type="module" crossorigin src="/ekweb/assets/main.026486ec.js"></script>
+  <link rel="stylesheet" href="/ekweb/assets/main.8acb209e.css">
 </head>
+
 <body>
   <div class="splash">
     <img class="fade-in center" src="/ekweb/assets/eklogo.e061e819.gif" alt="eklogo">
   </div>
-    <nav class="sidebar close nav">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                    <img src="/ekweb/assets/logo.a3296eac.svg" alt="">
-                </span>
-                <div class="text logo-text">
-                  <span class="profession">Welcome!</span>
-              </div>
-            </div>
-            <i class='bx bx-menu toggle'></i>
-        </header>
-        <div class="menu-bar" style="overflow-x: hidden;overflow-y: hidden;">
-            <div class="menu">
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="index.html">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-microchip icon' ></i>
-                            <span class="text nav-text">Custom ROM's</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-refresh icon'></i>
-                            <span class="text nav-text">Custom Recovery</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-chip icon' ></i>
-                            <span class="text nav-text">Eureka Kernel</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-book icon' ></i>
-                            <span class="text nav-text">Guides</span>
-                        </a>
-                    </li>
-                    <li class="nav-link">
-                      <a href="support.html">
-                          <i class='bx bx-heart icon' ></i>
-                          <span class="text nav-text">Support</span>
-                      </a>
-                  </li>
-                  <li class="nav-link">
-                    <a href="team.html">
-                        <i class='bx bxs-face icon'></i>
-                        <span class="text nav-text">Our Team</span>
-                    </a>
-                </li>
-                    <li class="nav-link">
-                      <a href="about.html">
-                          <i class='bx bx-info-circle icon' ></i>
-                          <span class="text nav-text">About Us</span>
-                      </a>
-                  </li>
-                </ul>
-            </div>
-            <div class="text logo-text" style="margin-left: 20px;margin-top: 5px;">
-          </div>
+  <nav class="sidebar close nav">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="/ekweb/assets/logo.a3296eac.svg" alt="">
+        </span>
+        <div class="text logo-text">
+          <span class="profession">Welcome!</span>
         </div>
-    </nav>
-    <section class="home">
-      <section class="author" style="justify-content: center;align-items: center;display: flex; margin-top: 51px;">
-        <section class="flex-card-wrapper">
-          <article class="flex-card-container bild-1">
-              <div class="overlay">
-                  <div class="icon">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Android_12_Developer_Preview_logo.svg/768px-Android_12_Developer_Preview_logo.svg.png">
-                  </div>
-                  <h3>A12 EasterEgg</h3>
-                  <p>This Android 12<br>EasterEgg</p>
-              </div>
-          </article>
-          <article class="flex-card-container bild-2">
-              <div class="overlay">
-                  <div class="icon">
-                      <img src="/ekweb/assets/logo.a3296eac.svg">
-                  </div>
-                  <h3>SamsungParts</h3>
-                  <p>Only features for<br>our A Series!</p>
-              </div>
-          </article>
-          <article class="flex-card-container bild-3">
-              <div class="overlay">
-                  <div class="icon">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png">
-                  </div>
-                  <h3>Launcher</h3>
-                  <p>Pixel Launcher<br>custom ROM</p>
-              </div>
-          </article>
-  
-          <article class="flex-card-container bild-4">
-              <div class="overlay">
-                  <div class="icon">
-                      <img src="/ekweb/assets/logo.a3296eac.svg">
-                  </div>
-                  <h3>E-Kernel Manager</h3>
-                  <p>Controll our Kernel<br>over our App</p>
-              </div>
-          </article>
-          <article class="flex-card-container bild-5">
-            <div class="overlay">
-                <div class="icon">
-                    <img src="/ekweb/assets/colorpalette.c310083c.png">
-                </div>
-                <h3>A12 Monet</h3>
-                <p>Colorful System<br>sinceA12</p>
+      </div>
+      <i class='bx bx-menu toggle'></i>
+    </header>
+    <div class="menu-bar" style="overflow-x: hidden;overflow-y: hidden;">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="index.html">
+              <i class='bx bx-home-alt icon'></i>
+              <span class="text nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-microchip icon'></i>
+              <span class="text nav-text">Custom ROM's</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-refresh icon'></i>
+              <span class="text nav-text">Custom Recovery</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-chip icon'></i>
+              <span class="text nav-text">Eureka Kernel</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-book icon'></i>
+              <span class="text nav-text">Guides</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="support.html">
+              <i class='bx bx-heart icon'></i>
+              <span class="text nav-text">Support</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="team.html">
+              <i class='bx bxs-face icon'></i>
+              <span class="text nav-text">Our Team</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="about.html">
+              <i class='bx bx-info-circle icon'></i>
+              <span class="text nav-text">About Us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="text logo-text" style="margin-left: 20px;margin-top: 5px;">
+      </div>
+    </div>
+  </nav>
+  <section class="home">
+    <section class="author" style="justify-content: center;align-items: center;display: flex; margin-top: 51px;">
+      <section class="flex-card-wrapper">
+        <article class="flex-card-container bild-1">
+          <div class="overlay">
+            <div class="icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Android_12_Developer_Preview_logo.svg/768px-Android_12_Developer_Preview_logo.svg.png">
             </div>
-        </article> 
+            <h3>A12 EasterEgg</h3>
+            <p>This Android 12<br>EasterEgg</p>
+          </div>
+        </article>
+        <article class="flex-card-container bild-2">
+          <div class="overlay">
+            <div class="icon">
+              <img src="/ekweb/assets/logo.a3296eac.svg">
+            </div>
+            <h3>SamsungParts</h3>
+            <p>Only features for<br>our A Series!</p>
+          </div>
+        </article>
+        <article class="flex-card-container bild-3">
+          <div class="overlay">
+            <div class="icon">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png">
+            </div>
+            <h3>Launcher</h3>
+            <p>Pixel Launcher<br>custom ROM</p>
+          </div>
+        </article>
+
+        <article class="flex-card-container bild-4">
+          <div class="overlay">
+            <div class="icon">
+              <img src="/ekweb/assets/logo.a3296eac.svg">
+            </div>
+            <h3>E-Kernel Manager</h3>
+            <p>Controll our Kernel<br>over our App</p>
+          </div>
+        </article>
+        <article class="flex-card-container bild-5">
+          <div class="overlay">
+            <div class="icon">
+              <img src="/ekweb/assets/colorpalette.c310083c.png">
+            </div>
+            <h3>A12 Monet</h3>
+            <p>Colorful System<br>sinceA12</p>
+          </div>
+        </article>
         <article class="flex-card-container bild-6">
           <div class="overlay">
-              <div class="icon">
-                  <img src="/ekweb/assets/logo.a3296eac.svg">
-              </div>
-              <h3>Aroma Installer</h3>
-              <p>Eureka Kernel Aroma<br>Installer with<br>custom Options</p>
+            <div class="icon">
+              <img src="/ekweb/assets/logo.a3296eac.svg">
+            </div>
+            <h3>Aroma Installer</h3>
+            <p>Eureka Kernel Aroma<br>Installer with<br>custom Options</p>
           </div>
-      </article> 
+        </article>
       </section>
-      </section>
-      <main>
-        <section class="content">
-          <section class="article-wrapper">
-            <article class="article">
-              <h2>Welcome to Eureka,</h2><br>
-              <p><br>Eureka Development is an Android Community for Exynos7885.<br> 
+    </section>
+    <main>
+      <section class="content">
+        <section class="article-wrapper">
+          <article class="article">
+            <h2>Welcome to Eureka,</h2><br>
+            <p><br>Eureka Development is an Android Community for Exynos7885.<br>
               <br>We Develop Custom ROM's, Recoveries and our own Eureka Kernel!
-              <br><br> Here you will definitely find one or the other rom or kernel. If not,  then take a look at Telegram. 
-              Under Support you will find our  groups and channels.
+              <br><br> Here you will definitely find one or the other rom or kernel. If not, then take a look at
+              Telegram.
+              Under Support you will find our groups and channels.
               <br>
               <br>Currently Supported Devices<br>
-              <br>Galaxy A10/A20/A20e <br>A30/A30s/A40<br></p>
-            </article>
-            <section class="comment">
-              <ul class="wrapper">
-                <li class="icon telegram">
-                  <span class="tooltip">Telegram</span>
-                  <span onclick="window.location.href='https://t.me/eureka_roms';" ><i class="fab fa-telegram"></i></span>
-                </li>
-                <li class="icon github">
-                  <span class="tooltip">Github</span>
-                  <span onclick="window.location.href='https://github.com/eurekadevelopment';"><i class="fab fa-github"></i></span>
-                </li>
-                <li class="icon paypal">
-                  <span class="tooltip">PayPal</span>
-                  <span onclick="window.location.href='https://www.paypal.me/chaturbaij';"><i class="fab fa-paypal"></i></span>
-                </li>
-                <li class="icon sourceforge">
-                  <span class="tooltip">SourceForge</span>
-                  <span onclick="window.location.href='https://sourceforge.net/projects/eurekaroms/';"><i class="fab fa-free-code-camp"></i></span>
-                </li>
-              </ul>
-            </section>
-            <hr style="height:1px;border-width:0;color:rgba(128, 128, 128, 0.288);background-color:rgba(128, 128, 128, 0.288)">
-            <br>
-            <section class="comment">
-              <p style="font-size: 12px;">© Eurekadevelopment <br>&nbsp;Design: Eureka Team</p>
-            </section>
+              <br>Galaxy A10/A20/A20e <br>A30/A30s/A40<br>
+            </p>
+          </article>
+          <section class="comment">
+            <ul class="wrapper">
+              <li class="icon telegram">
+                <span class="tooltip">Telegram</span>
+                <span onclick="window.location.href='https://t.me/eureka_roms';"><i class="fab fa-telegram"></i></span>
+              </li>
+              <li class="icon github">
+                <span class="tooltip">Github</span>
+                <span onclick="window.location.href='https://github.com/eurekadevelopment';"><i
+                    class="fab fa-github"></i></span>
+              </li>
+              <li class="icon paypal">
+                <span class="tooltip">PayPal</span>
+                <span onclick="window.location.href='https://www.paypal.me/chaturbaij';"><i
+                    class="fab fa-paypal"></i></span>
+              </li>
+              <li class="icon sourceforge">
+                <span class="tooltip">SourceForge</span>
+                <span onclick="window.location.href='https://sourceforge.net/projects/eurekaroms/';"><i
+                    class="fab fa-free-code-camp"></i></span>
+              </li>
+            </ul>
+          </section>
+          <div class="views">
+            <h2 id="view_count_text">Total Visits:</h2>
+          </div>
+         
+          <hr
+            style="height:1px;border-width:0;color:rgba(128, 128, 128, 0.288);background-color:rgba(128, 128, 128, 0.288)">
+          <br>
+          <section class="comment">
+            <p style="font-size: 12px;">© Eurekadevelopment <br>&nbsp;Design: Eureka Team</p>
           </section>
         </section>
-      </main>
+      </section>
+    </main>
   </section>
 </body>
-</html>   
+<script>document.write(unescape("%3Cscript%20type%3D%22application/javascript%22%3E%0Avar%20firebaseConfig%20%3D%20%7B%0A%20%20%20%20apiKey%3A%20%22AIzaSyAH1rtwQNO5BHMZy_DdMTVGDh4y7DrGKyc%22%2C%0A%20%20%20%20authDomain%3A%20%22eurekadevelopment-f98df.firebaseapp.com%22%2C%0A%20%20%20%20databaseURL%3A%20%22https%3A//eurekadevelopment-f98df-default-rtdb.firebaseio.com%22%2C%0A%20%20%20%20projectId%3A%20%22eurekadevelopment-f98df%22%2C%0A%20%20%20%20storageBucket%3A%20%22eurekadevelopment-f98df.appspot.com%22%2C%0A%20%20%20%20messagingSenderId%3A%20%22596745833779%22%2C%0A%20%20%20%20appId%3A%20%221%3A596745833779%3Aweb%3Abe65d396200e77148f4246%22%2C%0A%20%20%20%20measurementId%3A%20%22G-0T83M2F2QK%22%0A%7D%3B%0A%0A//%20Initialize%20Firebase%0Afirebase.initializeApp%28firebaseConfig%29%3B%0Afunction%20get_viewers_ip%28json%29%20%7B%0A%20%20%20%20viewers_ip%20%3D%20json.ip%3B%0A%20%20%20%20//view%20count%20with%20ip%0A%20%20%20%20count_view%28viewers_ip%29%3B%0A%7D%0A%0Afunction%20count_view%28viewers_ip%29%20%7B%0A%20%20%20%20var%20views%3B%0A%20%20%20%20var%20ip_to_string%20%3D%20viewers_ip.toString%28%29%3B%0A%0A%20%20%20%20for%20%28var%20i%2C%20i%20%3D%200%3B%20i%20%3C%20ip_to_string.length%3B%20i++%29%20%7B%0A%20%20%20%20%20%20%20%20ip_to_string%20%3D%20ip_to_string.replace%28%22.%22%2C%20%22-%22%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20firebase.database%28%29.ref%28%29.child%28%22eureka_db/%22%20+%20ip_to_string%29.set%28%7B%0A%20%20%20%20%20%20%20%20viewers_ip%3A%20viewers_ip%0A%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20firebase.database%28%29.ref%28%29.child%28%22eureka_db%22%29.on%28%22value%22%2C%20function%20%28snapshot%29%20%7B%0A%20%20%20%20%20%20%20%20views%20%3D%20snapshot.numChildren%28%29%3B%0A%20%20%20%20%20%20%20%20document.getElementById%28%22view_count_text%22%29.innerHTML%20%3D%20%22Total%20Visits%3A%22%20+%20views%3B%0A%20%20%20%20%7D%29%3B%0A%7D%0A%3C/script%3E"));</script>
 
+<script src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"></script>
+</html>
