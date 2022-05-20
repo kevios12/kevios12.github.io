@@ -62,7 +62,7 @@
 }
 @media screen and (max-width: 700px) {
   .pxc-avatar img {
-    margin-top: 100px;
+    margin-top: 95px;
     transform: rotate(90deg);
   }
 }
@@ -104,7 +104,7 @@
   flex-direction: column;
   background: rgba(60, 60, 61, 0.048);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   backdrop-filter: blur(3.4px);
   -webkit-backdrop-filter: blur(3.4px);
   border: 1px solid rgba(83, 78, 78, 1);
@@ -171,14 +171,14 @@
   flex: 1 1 auto;
   padding-bottom: 5px;
   margin-bottom: 5px;
-  line-height: 1.3;
+  line-height: 1;
   overflow: hidden;
-  mask-image: linear-gradient(black 50%, transparent 100%);
+  mask-image: linear-gradient(rgb(0, 0, 0) 100%, transparent 100%);
 }
 @media screen and (max-width: 700px) {
   .pxc-feats {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 1px;
     text-align: center;
   }
 }
