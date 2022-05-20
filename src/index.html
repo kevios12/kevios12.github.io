@@ -9,8 +9,8 @@
   <link rel="icon" type="image/svg+xml" href="favicon.ico" />
   <link rel="stylesheet" href="./scss/style.scss">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
   <title>Euerkadevelopment</title>
 </head>
 
@@ -190,7 +190,7 @@
           <div class="views">
             <h2 id="view_count_text">Total Visits:</h2>
           </div>
-         
+
           <hr
             style="height:1px;border-width:0;color:rgba(128, 128, 128, 0.288);background-color:rgba(128, 128, 128, 0.288)">
           <br>
@@ -205,4 +205,5 @@
 <script>document.write(unescape("%3Cscript%20type%3D%22application/javascript%22%3E%0Avar%20firebaseConfig%20%3D%20%7B%0A%20%20%20%20apiKey%3A%20%22AIzaSyAH1rtwQNO5BHMZy_DdMTVGDh4y7DrGKyc%22%2C%0A%20%20%20%20authDomain%3A%20%22eurekadevelopment-f98df.firebaseapp.com%22%2C%0A%20%20%20%20databaseURL%3A%20%22https%3A//eurekadevelopment-f98df-default-rtdb.firebaseio.com%22%2C%0A%20%20%20%20projectId%3A%20%22eurekadevelopment-f98df%22%2C%0A%20%20%20%20storageBucket%3A%20%22eurekadevelopment-f98df.appspot.com%22%2C%0A%20%20%20%20messagingSenderId%3A%20%22596745833779%22%2C%0A%20%20%20%20appId%3A%20%221%3A596745833779%3Aweb%3Abe65d396200e77148f4246%22%2C%0A%20%20%20%20measurementId%3A%20%22G-0T83M2F2QK%22%0A%7D%3B%0A%0A//%20Initialize%20Firebase%0Afirebase.initializeApp%28firebaseConfig%29%3B%0Afunction%20get_viewers_ip%28json%29%20%7B%0A%20%20%20%20viewers_ip%20%3D%20json.ip%3B%0A%20%20%20%20//view%20count%20with%20ip%0A%20%20%20%20count_view%28viewers_ip%29%3B%0A%7D%0A%0Afunction%20count_view%28viewers_ip%29%20%7B%0A%20%20%20%20var%20views%3B%0A%20%20%20%20var%20ip_to_string%20%3D%20viewers_ip.toString%28%29%3B%0A%0A%20%20%20%20for%20%28var%20i%2C%20i%20%3D%200%3B%20i%20%3C%20ip_to_string.length%3B%20i++%29%20%7B%0A%20%20%20%20%20%20%20%20ip_to_string%20%3D%20ip_to_string.replace%28%22.%22%2C%20%22-%22%29%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20firebase.database%28%29.ref%28%29.child%28%22eureka_db/%22%20+%20ip_to_string%29.set%28%7B%0A%20%20%20%20%20%20%20%20viewers_ip%3A%20viewers_ip%0A%20%20%20%20%7D%29%3B%0A%0A%20%20%20%20firebase.database%28%29.ref%28%29.child%28%22eureka_db%22%29.on%28%22value%22%2C%20function%20%28snapshot%29%20%7B%0A%20%20%20%20%20%20%20%20views%20%3D%20snapshot.numChildren%28%29%3B%0A%20%20%20%20%20%20%20%20document.getElementById%28%22view_count_text%22%29.innerHTML%20%3D%20%22Total%20Visits%3A%22%20+%20views%3B%0A%20%20%20%20%7D%29%3B%0A%7D%0A%3C/script%3E"));</script>
 <script type="module" src="./js/main.js"></script>
 <script src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"></script>
+
 </html>
