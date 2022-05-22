@@ -1,56 +1,62 @@
-.container1{
+.container1 {
     position: relative;
-   left: 50%;
-   top: 32%;
-   transform: translate(-50%, -50%);
-	.check{
-		display:none;
-	}
-	.btn{
-		color: #fff;
-		border: 1px solid #08f;
-		display: inline-block;
-		padding: 16px;
-		padding-right: 27px;
-		padding-left: 27px;
-		border-radius: 6px;
-		cursor: pointer;
-		overflow: hidden;
-		box-sizing: border-box;
-		font-size:14px;
-		transition: all .3s ease;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+
+    .check {
+        display: none;
+    }
+
+    .btn {
+        color: #fff;
+        border: 1px solid #08f;
+        display: inline-block;
+        padding: 16px;
+        padding-right: 27px;
+        padding-left: 27px;
+        border-radius: 6px;
+        cursor: pointer;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-size: 14px;
+        transition: all .3s ease;
         display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
         width: 62%;
         margin-left: 20%;
-		.mo{
-			position:relative;
-			overflow:hidden;
-			bottom: -150px;
-			width:0px;
-			height:0px;
-			text-align:center;
-			display: inline-block;
-		   opacity:0;
-			color: #000000;
-		}
-		&:before{
-			width:0%;
-			position: absolute;
-			left:0;
-			bottom:3px;
-			height: 5px;
-			background-color: #08f;
-			content: "";		
-		}
-		&:hover{
-			background-color: rgb(0, 136, 255);
-			color: #060e33;
-            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-		} 
-	}
+
+        .mo {
+            position: relative;
+            overflow: hidden;
+            bottom: -150px;
+            width: 0px;
+            height: 0px;
+            text-align: center;
+            display: inline-block;
+            opacity: 0;
+            color: #000000;
+        }
+
+        &:before {
+            width: 0%;
+            position: absolute;
+            left: 0;
+            bottom: 3px;
+            height: 5px;
+            background-color: #08f;
+            content: "";
+        }
+
+        &:hover {
+            background-color: rgb(0, 136, 255);
+            color: #060e33;
+            transform: scale(1.1);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    }
 }
 
 @media all and (min-width:60em) {
@@ -58,15 +64,18 @@
         top: 32%;
     }
 }
+
 @media all and (max-width:30em) {
     .container1 {
         top: 31%;
     }
 }
+
 @media all and (max-width:20em) {
     .container1 {
         top: 34%;
-        .btn{
+
+        .btn {
             color: #fff;
             border: 1px solid #08f;
             display: inline-block;
@@ -77,7 +86,7 @@
             cursor: pointer;
             overflow: hidden;
             box-sizing: border-box;
-            font-size:14px;
+            font-size: 14px;
             transition: all .3s ease;
             display: flex;
             text-align: center;
@@ -86,31 +95,35 @@
             width: 62%;
             margin-left: 20%;
             margin-bottom: 18px;
-            .mo{
-                position:relative;
-                overflow:hidden;
+
+            .mo {
+                position: relative;
+                overflow: hidden;
                 bottom: -150px;
-                width:0px;
-                height:0px;
-                text-align:center;
+                width: 0px;
+                height: 0px;
+                text-align: center;
                 display: inline-block;
-               opacity:0;
+                opacity: 0;
                 color: #000000;
             }
-            &:before{
-                width:0%;
+
+            &:before {
+                width: 0%;
                 position: absolute;
-                left:0;
-                bottom:3px;
+                left: 0;
+                bottom: 3px;
                 height: 5px;
                 background-color: #08f;
-                content: "";		
+                content: "";
             }
-            &:hover{
+
+            &:hover {
                 background-color: rgb(0, 136, 255);
                 color: #060e33;
-                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-            } 
+                transform: scale(1.1);
+                /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
         }
     }
 
@@ -120,7 +133,8 @@
 @media (max-width: 980px) {
     .container1 {
         top: 32%;
-        .btn{
+
+        .btn {
             color: #fff;
             border: 1px solid #08f;
             display: inline-block;
@@ -131,7 +145,7 @@
             cursor: pointer;
             overflow: hidden;
             box-sizing: border-box;
-            font-size:14px;
+            font-size: 14px;
             transition: all .3s ease;
             display: flex;
             text-align: center;
@@ -141,60 +155,68 @@
             margin-left: 20%;
             margin-bottom: 30px;
             height: 50px;
-            .mo{
-                position:relative;
-                overflow:hidden;
+
+            .mo {
+                position: relative;
+                overflow: hidden;
                 bottom: -150px;
-                width:0px;
-                height:0px;
-                text-align:center;
+                width: 0px;
+                height: 0px;
+                text-align: center;
                 display: inline-block;
-               opacity:0;
+                opacity: 0;
                 color: #000000;
             }
-            &:before{
-                width:0%;
+
+            &:before {
+                width: 0%;
                 position: absolute;
-                left:0;
-                bottom:3px;
+                left: 0;
+                bottom: 3px;
                 height: 5px;
                 background-color: #08f;
-                content: "";		
+                content: "";
             }
-            &:hover{
+
+            &:hover {
                 background-color: rgb(0, 136, 255);
                 color: #060e33;
-                transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-            } 
+                transform: scale(1.1);
+                /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
         }
     }
-    }
-  
-  @media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
     .container1 {
         top: 32%;
     }
-  }
+}
 
 
-  .column {
+.column {
     float: left;
     width: 20%;
-  }
-  .column1 {
+}
+
+.column1 {
     float: left;
     width: 20%;
-  }
-  .column2 {
+}
+
+.column2 {
     float: left;
     width: 20%;
-  }
-  .column3 {
+}
+
+.column3 {
     float: left;
     width: 20%;
-  }
-  /* The Modal (background) */
-  .modal {
+}
+
+/* The Modal (background) */
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -205,8 +227,9 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-  }
-  .modal1 {
+}
+
+.modal1 {
     display: none;
     position: fixed;
     z-index: 1;
@@ -217,8 +240,9 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-  }
-  .modal2 {
+}
+
+.modal2 {
     display: none;
     position: fixed;
     z-index: 1;
@@ -229,8 +253,9 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-  }
-  .modal3 {
+}
+
+.modal3 {
     display: none;
     position: fixed;
     z-index: 1;
@@ -241,78 +266,87 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-  }
-  /* Modal Content */
-  .modal-content {
+}
+
+/* Modal Content */
+.modal-content {
     position: relative;
     background-color: #000000;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1100px;
-  }
-    /* Modal Content */
-    .modal-content1 {
-        position: relative;
-        background-color: #000000;
-        margin: auto;
-        padding: 0;
-        width: 90%;
-        max-width: 1100px;
-      }
-    /* Modal Content */
-    .modal-content2 {
-        position: relative;
-        background-color: #000000;
-        margin: auto;
-        padding: 0;
-        width: 90%;
-        max-width: 1100px;
-      }
-      .modal-content3 {
-        position: relative;
-        background-color: #000000;
-        margin: auto;
-        padding: 0;
-        width: 90%;
-        max-width: 1100px;
-      }
-  /* The Close Button */
-  .close {
+}
+
+/* Modal Content */
+.modal-content1 {
+    position: relative;
+    background-color: #000000;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* Modal Content */
+.modal-content2 {
+    position: relative;
+    background-color: #000000;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.modal-content3 {
+    position: relative;
+    background-color: #000000;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* The Close Button */
+.close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .mySlides {
+}
+
+.mySlides {
     display: none;
-  }
-  .mySlides1 {
+}
+
+.mySlides1 {
     display: none;
-  }  
-  .mySlides2 {
+}
+
+.mySlides2 {
     display: none;
-  }  
-  .mySlides3 {
+}
+
+.mySlides3 {
     display: none;
-  } 
-  .cursor {
+}
+
+.cursor {
     cursor: pointer;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -326,83 +360,84 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
+}
+
 .prev {
     left: 0;
 }
 
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
     background-color: rgba(73, 72, 72, 0.555);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
-  
-  img {
+}
+
+img {
     margin-bottom: -4px;
-  }
-  
-  .caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .pic {
+}
+
+.pic {
     opacity: 0.4;
     margin-top: 50px;
-  }
-  .pic1 {
+}
+
+.pic1 {
     opacity: 0.4;
     margin-top: 50px;
-  }
-  .pic2 {
+}
+
+.pic2 {
     opacity: 0.4;
     margin-top: 50px;
-  }
-  .pic3 {
+}
+
+.pic3 {
     opacity: 0.4;
     margin-top: 50px;
-  }
-  .active,
-  .pic:hover {
+}
+
+.active,
+.pic:hover {
     opacity: 1;
-  }
-  .active,
-  .pic1:hover {
+}
+
+.active,
+.pic1:hover {
     opacity: 1;
-  } 
-  .active,
-  .pic2:hover {
+}
+
+.active,
+.pic2:hover {
     opacity: 1;
-  } 
-  .active,
-  .pic3:hover {
+}
+
+.active,
+.pic3:hover {
     opacity: 1;
-  } 
-  img.hover-shadow {
+}
+
+img.hover-shadow {
     transition: 0.5s;
-  }
-  
-  .hover-shadow:hover {
+}
+
+.hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+}
 
 @media (max-width: 700px) {
     .modal-content {
@@ -413,67 +448,77 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-}
-.modal-content1 {
-    position: relative;
-    background-color: #000000;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    margin-left: 30px;
-    margin-top: 40px;
-}
-.modal-content2 {
-    position: relative;
-    background-color: #000000;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    margin-left: 30px;
-    margin-top: 40px;
-}
-.modal-content3 {
-    position: relative;
-    background-color: #000000;
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    margin-left: 30px;
-    margin-top: 40px;
-}
-.prev {
-    left: 60px;
-    top: 200px;
-}
-  /* Position the "next button" to the right */
-  .next {
-    right: 60px;
-    top: 200px;
-    border-radius: 3px 0 0 3px;
-  }
-  .numbertext {
-      margin-left: 80px;
-  }
-  .column {
-    float: left;
-    width: 25%;
-    margin-left: 7%;
-  }
-  .column1 {
-    float: left;
-    width: 25%;
-    margin-left: 7%;
-  }
-  .column2 {
-    float: left;
-    width: 25%;
-    margin-left: 7%;
-  }
-  .column3 {
-    float: left;
-    width: 25%;
-    margin-left: 7%;
-  }
+    }
+
+    .modal-content1 {
+        position: relative;
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .modal-content2 {
+        position: relative;
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .modal-content3 {
+        position: relative;
+        background-color: #000000;
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 40px;
+    }
+
+    .prev {
+        left: 60px;
+        top: 200px;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 60px;
+        top: 200px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .numbertext {
+        margin-left: 80px;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        margin-left: 7%;
+    }
+
+    .column1 {
+        float: left;
+        width: 25%;
+        margin-left: 7%;
+    }
+
+    .column2 {
+        float: left;
+        width: 25%;
+        margin-left: 7%;
+    }
+
+    .column3 {
+        float: left;
+        width: 25%;
+        margin-left: 7%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -485,8 +530,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content1 {
+    }
+
+    .modal-content1 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -494,8 +540,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content2 {
+    }
+
+    .modal-content2 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -503,8 +550,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content3 {
+    }
+
+    .modal-content3 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -512,56 +560,67 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .prev {
+    }
+
+    .prev {
         left: 60px;
         top: 200px;
     }
-      /* Position the "next button" to the right */
-      .next {
+
+    /* Position the "next button" to the right */
+    .next {
         right: 60px;
         top: 200px;
         border-radius: 3px 0 0 3px;
-      }
-      .numbertext {
-          margin-left: 80px;
-      }
-      .column {
+    }
+
+    .numbertext {
+        margin-left: 80px;
+    }
+
+    .column {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides{
-          width: 700px;
-          margin-left: -150px;
-      }
-      .column1 {
+    }
+
+    .mySlides {
+        width: 700px;
+        margin-left: -150px;
+    }
+
+    .column1 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides1{
-          width: 700px;
-          margin-left: -150px;
-      }
-      .column2 {
+    }
+
+    .mySlides1 {
+        width: 700px;
+        margin-left: -150px;
+    }
+
+    .column2 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides2{
-          width: 700px;
-          margin-left: -150px;
-      }
-      .column3 {
+    }
+
+    .mySlides2 {
+        width: 700px;
+        margin-left: -150px;
+    }
+
+    .column3 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides3{
-          width: 700px;
-          margin-left: -150px;
-      }
+    }
+
+    .mySlides3 {
+        width: 700px;
+        margin-left: -150px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -573,8 +632,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content1 {
+    }
+
+    .modal-content1 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -582,8 +642,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content2 {
+    }
+
+    .modal-content2 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -591,8 +652,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content3 {
+    }
+
+    .modal-content3 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -600,56 +662,67 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .prev {
+    }
+
+    .prev {
         left: 60px;
         top: 200px;
     }
-      /* Position the "next button" to the right */
-      .next {
+
+    /* Position the "next button" to the right */
+    .next {
         right: 60px;
         top: 200px;
         border-radius: 3px 0 0 3px;
-      }
-      .numbertext {
-          margin-left: 150px;
-      }
-      .column {
+    }
+
+    .numbertext {
+        margin-left: 150px;
+    }
+
+    .column {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides{
-          width: 600px;
-          margin-left: -95px;
-      }
-      .column1 {
+    }
+
+    .mySlides {
+        width: 600px;
+        margin-left: -95px;
+    }
+
+    .column1 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides1{
-          width: 600px;
-          margin-left: -95px;
-      }
-      .column2 {
+    }
+
+    .mySlides1 {
+        width: 600px;
+        margin-left: -95px;
+    }
+
+    .column2 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides2{
-          width: 600px;
-          margin-left: -95px;
-      }
-      .column3 {
+    }
+
+    .mySlides2 {
+        width: 600px;
+        margin-left: -95px;
+    }
+
+    .column3 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides3{
-          width: 600px;
-          margin-left: -95px;
-      }
+    }
+
+    .mySlides3 {
+        width: 600px;
+        margin-left: -95px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -661,8 +734,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content1 {
+    }
+
+    .modal-content1 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -670,8 +744,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content2 {
+    }
+
+    .modal-content2 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -679,8 +754,9 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .modal-content3 {
+    }
+
+    .modal-content3 {
         position: fixed;
         background-color: #000000;
         margin: auto;
@@ -688,54 +764,65 @@
         width: 100%;
         margin-left: 30px;
         margin-top: 40px;
-      }
-      .prev {
+    }
+
+    .prev {
         left: 30px;
         top: 200px;
     }
-      /* Position the "next button" to the right */
-      .next {
+
+    /* Position the "next button" to the right */
+    .next {
         right: 30px;
         top: 200px;
         border-radius: 3px 0 0 3px;
-      }
-      .numbertext {
-          margin-left: 150px;
-      }
-      .column {
+    }
+
+    .numbertext {
+        margin-left: 150px;
+    }
+
+    .column {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides{
-          width: 600px;
-          margin-left: -60px;
-      }
-      .column1 {
+    }
+
+    .mySlides {
+        width: 600px;
+        margin-left: -60px;
+    }
+
+    .column1 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides1{
-          width: 600px;
-          margin-left: -60px;
-      }
-      .column2 {
+    }
+
+    .mySlides1 {
+        width: 600px;
+        margin-left: -60px;
+    }
+
+    .column2 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides2{
-          width: 600px;
-          margin-left: -60px;
-      }
-      .column3 {
+    }
+
+    .mySlides2 {
+        width: 600px;
+        margin-left: -60px;
+    }
+
+    .column3 {
         float: left;
         width: 25%;
         margin-left: 7%;
-      }
-      .mySlides3{
-          width: 600px;
-          margin-left: -60px;
-      }
+    }
+
+    .mySlides3 {
+        width: 600px;
+        margin-left: -60px;
+    }
 }

@@ -74,7 +74,7 @@ main {
     @include large {
       flex-direction: row;
     }
-    
+
     .article-wrapper {
       margin-top: -45px;
       background-color: black;
@@ -101,7 +101,7 @@ main {
         align-items: center;
         display: flex;
       }
-      
+
     }
 
     aside {
@@ -571,9 +571,9 @@ header .image-text .profession {
 }
 
 @media screen and (max-width: 900px) {
-  .cards_rp { 
-    grid-template-columns: repeat(1, 1fr); 
-    margin-top: 68px; 
+  .cards_rp {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 68px;
     width: 100%;
     font-size: 13px;
   }
@@ -581,12 +581,16 @@ header .image-text .profession {
 
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
-  .cards_rp { grid-template-columns: repeat(2, 1fr); }
+  .cards_rp {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
-  .cards_rp { grid-template-columns: repeat(4, 1fr); }
+  .cards_rp {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
 }
 
@@ -594,4 +598,3 @@ header .image-text .profession {
   width: 32px;
   height: 32px;
 }
-

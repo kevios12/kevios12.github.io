@@ -1,6 +1,5 @@
 import './../scss/style.scss'
 
-
 //splash animation//
 const splash = document.querySelector('.splash');
 document.addEventListener('DOMContentLoaded', (e) => {
@@ -36,5 +35,3 @@ function addClass($event) {
 IMAGES.forEach(image => {
     image.addEventListener('click', addClass);
 });
-
-// dlbtn
