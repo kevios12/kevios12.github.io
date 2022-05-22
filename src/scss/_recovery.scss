@@ -59,18 +59,18 @@
     }
 }
 
-@media all and (min-width:60em) {
+
+@media all and (min-width:40em) {
     .container1 {
         top: 32%;
     }
 }
 
-@media all and (max-width:30em) {
+@media all and (max-width:1300px) {
     .container1 {
-        top: 31%;
-    }
+        top: 32%;
+    } 
 }
-
 @media all and (max-width:20em) {
     .container1 {
         top: 34%;
