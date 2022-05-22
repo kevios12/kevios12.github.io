@@ -4,6 +4,7 @@
 @import 'boxes';
 @import 'profile';
 @import 'supp';
+@import 'recovery';
 
 $headerHeight: 10rem;
 $sidebarWidth: 35rem;
@@ -72,7 +73,7 @@ main {
     @include large {
       flex-direction: row;
     }
-
+    
     .article-wrapper {
       margin-top: -45px;
       background-color: black;
@@ -99,6 +100,7 @@ main {
         align-items: center;
         display: flex;
       }
+      
     }
 
     aside {
@@ -544,3 +546,51 @@ header .image-text .profession {
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+.img_size {
+  width: 128px;
+  height: 128px;
+}
+
+.card_rp {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 0rem;
+  height: 76rem;
+}
+
+.cards_rp {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 900px) {
+  .cards_rp { 
+    grid-template-columns: repeat(1, 1fr); 
+    margin-top: 68px; 
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards_rp { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards_rp { grid-template-columns: repeat(4, 1fr); }
+
+}
+
+.size_rp_i {
+  width: 32px;
+  height: 32px;
+}
+

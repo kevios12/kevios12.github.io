@@ -1,0 +1,54 @@
+.container1{
+    position: relative;
+   left: 50%;
+   top: 32%;
+   transform: translate(-50%, -50%);
+	.check{
+		display:none;
+	}
+	.btn{
+		color: #fff;
+		border: 1px solid #08f;
+		display: inline-block;
+		padding: 16px;
+		padding-right: 27px;
+		padding-left: 27px;
+		border-radius: 6px;
+		cursor: pointer;
+		overflow: hidden;
+		box-sizing: border-box;
+		font-size:14px;
+		transition: all .3s ease;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 62%;
+        margin-left: 20%;
+		.mo{
+			position:relative;
+			overflow:hidden;
+			bottom: -150px;
+			width:0px;
+			height:0px;
+			text-align:center;
+			display: inline-block;
+		   opacity:0;
+			color: #000000;
+		}
+		&:before{
+			width:0%;
+			position: absolute;
+			left:0;
+			bottom:3px;
+			height: 5px;
+			background-color: #08f;
+			content: "";		
+		}
+		&:hover{
+			background-color: rgb(0, 136, 255);
+			color: #060e33;
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+		} 
+	}
+}

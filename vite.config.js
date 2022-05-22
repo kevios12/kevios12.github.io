@@ -14,6 +14,7 @@ export default defineConfig({
                 about: resolve(__dirname, "./src/about.html"),
                 team: resolve(__dirname, "./src/team.html"),
                 support: resolve(__dirname, "./src/support.html"),
+                recovery: resolve(__dirname, "./src/recovery.html"),
             },
         },
     }
