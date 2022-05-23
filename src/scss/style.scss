@@ -7,6 +7,7 @@
 @import 'recovery';
 @import 'dropdown';
 @import '404';
+@import 'kernel';
 
 $headerHeight: 10rem;
 $sidebarWidth: 35rem;
@@ -502,8 +503,11 @@ header .image-text .profession {
 
 .center {
   display: block;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 41%;
   width: 15%;
   margin-top: 17%;
 }
@@ -576,7 +580,6 @@ header .image-text .profession {
   margin-top: 150px;
 }
 
-
 @media screen and (max-width: 900px) {
   .cards_rp {
     grid-template-columns: repeat(1, 1fr);
@@ -584,8 +587,39 @@ header .image-text .profession {
     width: 100%;
     font-size: 13px;
   }
+
   .mopb {
     margin-top: 100px;
+  }
+
+  .imgkernel {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+  }
+
+  .figtext {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+  }
+
+  .figtext1 {
+    font-size: 22px;
+    text-align: center;
+    color: #08f;
+  }
+
+  .figtext_changelog {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+  }
+
+  .figtext1_changelog {
+    font-size: 22px;
+    text-align: center;
+    color: #08f;
   }
 }
 
@@ -594,8 +628,39 @@ header .image-text .profession {
   .cards_rp {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .mopb {
     margin-top: 140px;
+  }
+
+  .imgkernel {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 10px;
+  }
+
+  .figtext {
+    font-size: 41px;
+    text-align: center;
+    color: white;
+  }
+
+  .figtext1 {
+    font-size: 41px;
+    text-align: center;
+    color: #08f;
+  }
+
+  .figtext_changelog {
+    font-size: 28px;
+    text-align: center;
+    color: white;
+  }
+
+  .figtext1_changelog {
+    font-size: 28px;
+    text-align: center;
+    color: #08f;
   }
 }
 
@@ -604,6 +669,7 @@ header .image-text .profession {
   .cards_rp {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .mopb {
     margin-top: 50px;
   }
@@ -619,4 +685,4 @@ article#nomark {
   -moz-user-select: None;
   -webkit-user-select: None;
   user-select: None;
- }
+}

@@ -15,6 +15,7 @@ export default defineConfig({
                 team: resolve(__dirname, "./src/team.html"),
                 support: resolve(__dirname, "./src/support.html"),
                 recovery: resolve(__dirname, "./src/recovery.html"),
+                kernel: resolve(__dirname, "./src/kernel.html"),
                 404: resolve(__dirname, "./src/404.html"),
             },
         },
