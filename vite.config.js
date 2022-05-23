@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 const { resolve } = require("path");
 
 export default defineConfig({
-    base: '/ekweb/',
+    base: '/',
     root: "src",
     assetsInclude: ["./assets/**/*.*"],
     build: {
