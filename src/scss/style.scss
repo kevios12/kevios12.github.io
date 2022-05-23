@@ -90,7 +90,7 @@ main {
 
       .author {
         min-height: 10vh;
-        margin: 0 0 $margin 0;
+        margin: 0 0 0 0;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -571,12 +571,21 @@ header .image-text .profession {
   font-size: 16px;
 }
 
+
+.mopb {
+  margin-top: 150px;
+}
+
+
 @media screen and (max-width: 900px) {
   .cards_rp {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 68px;
     width: 100%;
     font-size: 13px;
+  }
+  .mopb {
+    margin-top: 100px;
   }
 }
 
@@ -585,6 +594,9 @@ header .image-text .profession {
   .cards_rp {
     grid-template-columns: repeat(2, 1fr);
   }
+  .mopb {
+    margin-top: 140px;
+  }
 }
 
 /* Screen larger than 900px? 3 columns */
@@ -592,10 +604,19 @@ header .image-text .profession {
   .cards_rp {
     grid-template-columns: repeat(4, 1fr);
   }
-
+  .mopb {
+    margin-top: 50px;
+  }
 }
 
 .size_rp_i {
   width: 32px;
   height: 32px;
 }
+
+article#nomark {
+  -ms-user-select: None;
+  -moz-user-select: None;
+  -webkit-user-select: None;
+  user-select: None;
+ }
