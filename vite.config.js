@@ -16,6 +16,7 @@ export default defineConfig({
                 support: resolve(__dirname, "./src/support.html"),
                 recovery: resolve(__dirname, "./src/recovery.html"),
                 kernel: resolve(__dirname, "./src/kernel.html"),
+                guide: resolve(__dirname, "./src/guide.html"),
                 404: resolve(__dirname, "./src/404.html"),
             },
         },
