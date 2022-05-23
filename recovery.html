@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d72bd4ed55.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,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" />
+    
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Euerkadevelopment</title>
+  <script type="module" crossorigin src="/assets/main.026486ec.js"></script>
+  <link rel="stylesheet" href="/assets/main.ae9e9307.css">
+</head>
+
+<body>
+    <div class="splash">
+        <img class="fade-in center" src="/assets/eklogo.e061e819.gif" alt="eklogo">
+    </div>
+    <nav class="sidebar close nav">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/assets/logo.a3296eac.svg" alt="">
+                </span>
+                <div class="text logo-text">
+                    <span class="profession">Welcome!</span>
+                </div>
+            </div>
+            <i class='bx bx-menu toggle'></i>
+        </header>
+        <div class="menu-bar" style="overflow-x: hidden;overflow-y: hidden;">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-microchip icon'></i>
+                            <span class="text nav-text">Custom ROM's</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="recovery.html">
+                            <i class='bx bx-refresh icon'></i>
+                            <span class="text nav-text">Custom Recovery</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="kernel.html">
+                            <i class='bx bx-chip icon'></i>
+                            <span class="text nav-text">Eureka Kernel</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-book icon'></i>
+                            <span class="text nav-text">Guides</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="support.html">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav-text">Support</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="team.html">
+                            <i class='bx bxs-face icon'></i>
+                            <span class="text nav-text">Our Team</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="about.html">
+                            <i class='bx bx-info-circle icon'></i>
+                            <span class="text nav-text">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text logo-text" style="margin-left: 20px;margin-top: 5px;">
+            </div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="cards_rp">
+            <div class="card_rp">
+                <img src="/assets/twrp.5100673f.svg" class="img_size">
+                <p>TeamWinRecoveryProject</p>
+                <br>
+                <div class="container2">
+                    <div>
+                        <a class="btn1" href="#a10">TWRP A10</a>
+                    </div>
+                </div>
+                <div id="a10" class="modal-window4">
+                    <div>
+                        <a href="#" title="Close" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+                        <p style="margin-top: -10px;"><i class="fa fa-download" aria-hidden="true"></i>Select your TWRP
+                            Version</p>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.html">TWRP
+                                3.6.0_9.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a10/twrp-3.6.0_9-0-a10.img.tar.html">TWRP
+                                3.6.0_9.tar</a>
+                        </div>
+                        <div>
+                            <a class="btn1"
+                                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.img">TWRP
+                                3.6.0_11.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1"
+                                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/TWRP/twrp-3.6.0_11-a10.tar">TWRP
+                                3.6.0_11.tar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div>
+                        <a class="btn1" href="#a20">TWRP A20</a>
+                    </div>
+                </div>
+                <div id="a20" class="modal-window3">
+                    <div style="height: 220px;">
+                        <a href="#" title="Close" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+                        <p style="margin-top: -10px;"><i class="fa fa-download" aria-hidden="true"></i>Select your TWRP
+                            Version</p>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.html">TWRP
+                                3.6.0_9.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a20/twrp-3.6.0_9-0-a20.img.tar.html">TWRP
+                                3.6.0_9.tar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div>
+                        <a class="btn1" href="#a20e">TWRP A20e</a>
+                    </div>
+                </div>
+                <div id="a20e" class="modal-window2">
+                    <div style="height: 220px;">
+                        <a href="#" title="Close" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+                        <p style="margin-top: -10px;"><i class="fa fa-download" aria-hidden="true"></i>Select your TWRP
+                            Version</p>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.html">TWRP
+                                3.6.0_9.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a20e/twrp-3.6.0_9-0-a20e.img.tar.html">TWRP
+                                3.6.0_9.tar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div>
+                        <a class="btn1" href="#a30">TWRP A30</a>
+                    </div>
+                </div>
+                <div id="a30" class="modal-window1">
+                    <div style="height: 220px;">
+                        <a href="#" title="Close" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+                        <p style="margin-top: -10px;"><i class="fa fa-download" aria-hidden="true"></i>Select your TWRP
+                            Version</p>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.html">TWRP
+                                3.6.0_9.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1" href="https://eu.dl.twrp.me/a30/twrp-3.6.0_9-0-a30.img.tar.html">TWRP
+                                3.6.0_9.tar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <div>
+                        <a class="btn1" href="#a40">TWRP A40</a>
+                    </div>
+                </div>
+                <div id="a40" class="modal-window5">
+                    <div>
+                        <a href="#" title="Close" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+                        <p style="margin-top: -10px;"><i class="fa fa-download" aria-hidden="true"></i>Select your TWRP
+                            Version</p>
+                        <div>
+                            <a class="btn1"
+                                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_9-a40.img">TWRP
+                                3.6.1_9.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1"
+                                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_9-a40.tar">TWRP
+                                3.6.1_9.tar</a>
+                        </div>
+                        <div>
+                            <a class="btn1"
+                                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_11.img">TWRP
+                                3.6.1_11.img</a>
+                        </div>
+                        <div>
+                            <a class="btn1"
+                                href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/TWRP/TWRP-3.6.1_11_A40.tar">TWRP
+                                3.6.1_11.tar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container2">
+                    <label>
+                        <div class="btn1" onclick="openModal3();currentSlide(1)">
+                            <span class="me">SCREENSHOTS</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="myModal3" class="modal3">
+                    <span class="close cursor" onclick="closeModal3()">&times;</span>
+                    <div class="modal-content3">
+                        <div class="mySlides3">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="/assets/1.576a4029.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="/assets/2.5bc87395.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="/assets/3.612f338e.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="/assets/4.3dc4b81f.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides3">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="/assets/5.4fc51da0.jpg" style="width:25%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="column3">
+                            <img class="pic3 cursor" src="/assets/1.576a4029.jpg" style="width:25%"
+                                onclick="currentSlide(1)" alt="">
+                        </div>
+                        <div class="column3">
+                            <img class="pic3 cursor" src="/assets/2.5bc87395.jpg" style="width:25%"
+                                onclick="currentSlide(2)" alt="">
+                        </div>
+                        <div class="column3">
+                            <img class="pic3 cursor" src="/assets/3.612f338e.jpg" style="width:25%"
+                                onclick="currentSlide(3)" alt="">
+                        </div>
+                        <div class="column3">
+                            <img class="pic3 cursor" src="/assets/4.3dc4b81f.jpg" style="width:25%"
+                                onclick="currentSlide(4)" alt="">
+                        </div>
+                        <div class="column3">
+                            <img class="pic3 cursor" src="/assets/5.4fc51da0.jpg" style="width:25%"
+                                onclick="currentSlide(5)" alt="">
+                        </div>
+                    </div>
+                </div>
+                <i class='bx bx-images size_rp_i'></i>
+                <p>Screenshots [5]</p>
+                <br>
+                <i class='bx bx-info-circle size_rp_i'></i>
+                <p>Vers.: 3.1.0</p>
+            </div>
+            <div class="card_rp">
+                <img src="/assets/ofox.b3a60222.jpg" class="img_size">
+                <p>OrangeFoxRecovery</p>
+                <br>
+                <div class="container1">
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/OFRP/OrangeFox-R11.1-Unofficial-20211120-a10.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;OFOX A10&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20/OFOX/OrangeFox-R11.1-Unofficial-a20.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;OFOX A20&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20e/OFOX/OrangeFox-R11.1-Unofficial-a20e.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">OFOX A20e</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A30/OFOX/OrangeFox-a30-beta%40R11.1.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;OFOX A30&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/OFOX/OrangeFox-R11.1-Unofficial-a40.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;OFOX A40&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <div class="btn" onclick="openModal1();currentSlide(1)">
+                            <span class="me">SCREENSHOTS</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="myModal1" class="modal1">
+                    <span class="close cursor" onclick="closeModal1()">&times;</span>
+                    <div class="modal-content1">
+                        <div class="mySlides1">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="/assets/1.54ea90d2.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides1">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="/assets/2.79ed48d1.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides1">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="/assets/3.c1079399.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides1">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="/assets/4.efe1463d.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides1">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="/assets/5.1c6308ac.jpg" style="width:25%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="column1">
+                            <img class="pic1 cursor" src="/assets/1.54ea90d2.jpg" style="width:25%"
+                                onclick="currentSlide(1)" alt="">
+                        </div>
+                        <div class="column1">
+                            <img class="pic1 cursor" src="/assets/2.79ed48d1.jpg" style="width:25%"
+                                onclick="currentSlide(2)" alt="">
+                        </div>
+                        <div class="column1">
+                            <img class="pic1 cursor" src="/assets/3.c1079399.jpg" style="width:25%"
+                                onclick="currentSlide(3)" alt="">
+                        </div>
+                        <div class="column1">
+                            <img class="pic1 cursor" src="/assets/4.efe1463d.jpg" style="width:25%"
+                                onclick="currentSlide(4)" alt="">
+                        </div>
+                        <div class="column1">
+                            <img class="pic1 cursor" src="/assets/5.1c6308ac.jpg" style="width:25%"
+                                onclick="currentSlide(5)" alt="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <i class='bx bx-images size_rp_i'></i>
+                <p>Screenshots [5]</p>
+                <br>
+                <i class='bx bx-info-circle size_rp_i'></i>
+                <p>Vers.: R11.1</p>
+            </div>
+            <div class="card_rp">
+                <img src="/assets/shrp.a002527b.png" class="img_size">
+                <p>SkyHawkRecoveryProject</p>
+                <br>
+                <div class="container1">
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/SHRP/SHRP_v3.1_stable-Unofficial_a10-1637266817.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;SHRP A10&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20/SHRP/SHRP_v3.1_stable-Unofficial_a20-1577836817.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;SHRP A20&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20e/SHRP/SHRP_v3.1_stable-Unofficial_a20e-1577838813.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">SHRP A20e</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A30/SHRP/SHRP_v3.1_stable-Unofficial_a30-1650014915.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;SHRP A30&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/SHRP/SHRP_v3.1_stable-Unofficial_a40-1577836820.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;SHRP A40&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <div class="btn" onclick="openModal2();currentSlide(1)">
+                            <span class="me">SCREENSHOTS</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="myModal2" class="modal2">
+                    <span class="close cursor" onclick="closeModal2()">&times;</span>
+                    <div class="modal-content2">
+                        <div class="mySlides2">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="/assets/1.dff1c9bc.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides2">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="/assets/2.f9d77ec0.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides2">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="/assets/3.558f6c2d.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides2">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="/assets/4.be511c46.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides2">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="/assets/5.a868fd7b.jpg" style="width:25%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="column2">
+                            <img class="pic2 cursor" src="/assets/1.dff1c9bc.jpg" style="width:25%"
+                                onclick="currentSlide(1)" alt="">
+                        </div>
+                        <div class="column2">
+                            <img class="pic2 cursor" src="/assets/2.f9d77ec0.jpg" style="width:25%"
+                                onclick="currentSlide(2)" alt="">
+                        </div>
+                        <div class="column2">
+                            <img class="pic2 cursor" src="/assets/3.558f6c2d.jpg" style="width:25%"
+                                onclick="currentSlide(3)" alt="">
+                        </div>
+                        <div class="column2">
+                            <img class="pic2 cursor" src="/assets/4.be511c46.jpg" style="width:25%"
+                                onclick="currentSlide(4)" alt="">
+                        </div>
+                        <div class="column2">
+                            <img class="pic2 cursor" src="/assets/5.a868fd7b.jpg" style="width:25%"
+                                onclick="currentSlide(5)" alt="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <i class='bx bx-images size_rp_i'></i>
+                <p>Screenshots [5]</p>
+                <br>
+                <i class='bx bx-info-circle size_rp_i'></i>
+                <p>Vers.: 3.1.0</p>
+            </div>
+            <div class="card_rp">
+                <img src="/assets/pbrp.d76bed30.png" class="img_size">
+                <p>PitchBlackRecoveryProject</p>
+                <br>
+                <div class="container1">
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A10/PBRP/PBRP-a10-3.1.0-20211118-2142-UNOFFICIAL.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;PBRP A10&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20/PBRP/PBRP-a20-3.1.0-20211120-UNOFFICIAL.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;PBRP A20&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A20e/PBRP/PBRP-a20e-3.1.0-20211120-UNOFFICIAL.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">PBRP A20e</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="404.html">
+                            <div class="btn">
+                                <span class="me">&nbsp;PBRP A30&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <a href="https://sourceforge.net/projects/eurekaroms/files/Recoveries/A40/PBRP/PBRP-a40-3.1.0-20220415-2032-UNOFFICIAL.zip"
+                            target="_blank">
+                            <div class="btn">
+                                <span class="me">&nbsp;PBRP A40&nbsp;</span>
+                            </div>
+                        </a>
+                    </label>
+                    <label>
+                        <input class="check" type="checkbox">
+                        <div class="btn" onclick="openModal();currentSlide(1)">
+                            <span class="me">SCREENSHOTS</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="/assets/1.04fdb908.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="/assets/2.f63f0c94.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="/assets/3.30ca1e14.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="/assets/4.d2819eb5.jpg" style="width:25%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="/assets/5.6130d99a.jpg" style="width:25%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="column">
+                            <img class="pic cursor" src="/assets/1.04fdb908.jpg" style="width:25%"
+                                onclick="currentSlide(1)" alt="">
+                        </div>
+                        <div class="column">
+                            <img class="pic cursor" src="/assets/2.f63f0c94.jpg" style="width:25%"
+                                onclick="currentSlide(2)" alt="">
+                        </div>
+                        <div class="column">
+                            <img class="pic cursor" src="/assets/3.30ca1e14.jpg" style="width:25%"
+                                onclick="currentSlide(3)" alt="">
+                        </div>
+                        <div class="column">
+                            <img class="pic cursor" src="/assets/4.d2819eb5.jpg" style="width:25%"
+                                onclick="currentSlide(4)" alt="">
+                        </div>
+                        <div class="column">
+                            <img class="pic cursor" src="/assets/5.6130d99a.jpg" style="width:25%"
+                                onclick="currentSlide(5)" alt="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <i class='bx bx-images size_rp_i'></i>
+                <p>Screenshots [5]</p>
+                <br>
+                <i class='bx bx-info-circle size_rp_i'></i>
+                <p>Vers.: 3.1.0</p>
+            </div>
+        </div>
+        <main>
+            <section class="content">
+                <section class="article-wrapper">
+                    <article class="article" style="margin-top: -135px;">
+                    </article>
+                    <hr
+                        style="height:1px;border-width:0;color:rgba(128, 128, 128, 0.288);background-color:rgba(165, 154, 154, 0.288)">
+                    <br>
+                    <section class="comment">
+                        <p style="font-size: 12px;">© Eurekadevelopment <br>&nbsp;Design: Eureka Team</p>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </section>
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        function openModal1() {
+            document.getElementById("myModal1").style.display = "block";
+        }
+        function openModal2() {
+            document.getElementById("myModal2").style.display = "block";
+        }
+        function openModal3() {
+            document.getElementById("myModal3").style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+        function closeModal1() {
+            document.getElementById("myModal1").style.display = "none";
+        }
+        function closeModal2() {
+            document.getElementById("myModal2").style.display = "none";
+        }
+        function closeModal3() {
+            document.getElementById("myModal3").style.display = "none";
+        }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var slides1 = document.getElementsByClassName("mySlides1");
+            var slides2 = document.getElementsByClassName("mySlides2");
+            var slides3 = document.getElementsByClassName("mySlides3");
+            var dots = document.getElementsByClassName("pic");
+            var dots1 = document.getElementsByClassName("pic1");
+            var dots2 = document.getElementsByClassName("pic2");
+            var dots3 = document.getElementsByClassName("pic3");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n > slides1.length) { slideIndex = 1 }
+            if (n > slides2.length) { slideIndex = 1 }
+            if (n > slides3.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            if (n < 1) { slideIndex = slides1.length }
+            if (n < 1) { slideIndex = slides2.length }
+            if (n < 1) { slideIndex = slides3.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";
+            }
+            for (i = 0; i < slides2.length; i++) {
+                slides2[i].style.display = "none";
+            }
+            for (i = 0; i < slides3.length; i++) {
+                slides3[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            for (i = 0; i < dots1.length; i++) {
+                dots1[i].className = dots1[i].className.replace(" active", "");
+            }
+            for (i = 0; i < dots2.length; i++) {
+                dots2[i].className = dots2[i].className.replace(" active", "");
+            }
+            for (i = 0; i < dots3.length; i++) {
+                dots3[i].className = dots3[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            slides1[slideIndex - 1].style.display = "block";
+            slides2[slideIndex - 1].style.display = "block";
+            slides3[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            dots1[slideIndex - 1].className += " active";
+            dots2[slideIndex - 1].className += " active";
+            dots3[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
