@@ -10,7 +10,7 @@
 /* Style the buttons inside the tab */
 .tab button {
   color: rgb(255, 255, 255);
-  width: 70%;
+  width: 55%;
   transition: 0.5s ease-in;
   margin-top: 205px;
   margin-bottom: -120px;
@@ -23,12 +23,13 @@
   cursor: pointer;
   overflow: hidden;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
   transition: all .3s ease;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+
 }
  
 /* Change background color of buttons on hover */
@@ -54,7 +55,7 @@
   background: rgba(194, 144, 144, 0);
   width: 70%;
   height: 500px;
-  margin-left: 40px;
+  margin-left: 30px;
   animation: blinker 0.6s linear;
   text-align: center;
 }
@@ -77,7 +78,8 @@
     text-align: center;
   }
   .tab button {
-      margin-left: -5px;
+      margin-left: 5px;
+
   }
 }
  
@@ -95,9 +97,6 @@
     width: 60%;
     margin-top: 167px;
     margin-bottom: -80px;
-  }
-  .tab .arrow {
-    display: none !important;
   }
 }
 .text
