@@ -9,20 +9,10 @@
     <link rel="icon" type="image/svg+xml" href="favicon.ico" />
     <link rel="stylesheet" href="./scss/style.scss">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" />
     <title>Euerkadevelopment</title>
 </head>
 
 <body>
-    <style>
-        ul li {
-        color: #fff;
-        margin: 5px;
-        }
-      </style>
     <div class="splash">
         <img class="fade-in center" src="./img/eklogo.gif" alt="eklogo">
     </div>
@@ -103,38 +93,8 @@
     </nav>
     <section class="home">
         <section class="author" style="justify-content: center;align-items: center;display: flex; margin-top: 51px;">
-                <!--<div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
-                    <input type="radio" name="pcss3t" checked  id="tab1" class="tab-content-first">
-                    <label for="tab1"><i class="icon-home"></i>Home</label>
-                    <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
-                    <label for="tab2"><i class="icon-book"></i>Guides</label>
-                    <input type="radio" name="pcss3t" id="tab3" class="tab-content-3">
-                    <label for="tab3"><i class="icon-download"></i>Downloads</label>
-                    <ul>
-                        <li class="tab-content tab-content-first typography">
-                            <h1>Here you will find a small overview of what you can find here.</h1>
-                            <br>
-                            <hr style="height:1px;border-width:0;color:rgba(128, 128, 128, 0.288);background-color:rgba(128, 128, 128, 0.288)">
-                            <br>
-                            <article class="changelog">
-                                <section class="version -planned">
-                                    <section>
-                                        <div>
-                                            <span class="label-inline -ghost -white" style="color: white;">Index: Guides</span>
-                                        </div>
-                                    </section>
-                                </section>
-                            </article>
-  
-                            <p></p>
-                            <article class="changelog">
-                                <section class="version -planned">
-                                    <section>
-                                        <div>
-                                            <span class="label-inline -ghost -white" style="color: white;">Index: Downloads</span>
-                                        </div>
-                                    </section>
-                                </section>
+
+                            <!-- needed for download >> start here  
                             </article>
                             <p>ODIN Samsung Flash Tool</p>
                             <p>Heimdall Samsung Flash Tool</p>
@@ -142,9 +102,7 @@
                             <p>Samsung USB Driver</p>
                             <p>Magisk-latest.zip</p>
                             <p>DM-Verity.zip</p>
-                        </li>
-
-       
+                            </li>
 
                         </li>
                         <li class="tab-content tab-content-3 typography">
@@ -342,134 +300,8 @@
                             <p>*.dmg are MacOS Packages</p>
                         </li>
                     </ul>
-                </div>-->
-        
-
-                <main class="card1">
-                      <img src="./img/logo.svg" style="width: 128px; height: 128px;">
-                    <h2 class="title">Guides</h2>
-                    <div class="acc-container">
-                      <button class="acc-btn">How to Unlock Bootloader?</button>
-                      <div class="acc-content">
-                        <ul>
-                        <li><p>Go into Settings > About Phone > Softwareinfo.</p></li>
-                        <li><p>Tab 10-15x on Buildnumber to unlock Dev. Options.</p></li>
-                        <li><p>Enable OEM Unlock.</p></li>
-                        <li><p>Turn off your Phone.</p></li>
-                        <li><p>Hold Vol+ and Vol- together and plug your USB Cable in.</p></li>
-                        <li><p>Now a Blue Screen appears, follow the Screen instructions to UNLOCK (Attention: Your Knox Status will 0x1 triggered and your Waranty is now void.).</p></li>
-                        <li><p>After u following everything right, it will reboot. It will not Format your DATA.</p></li>
-                        <li><p>After u booted to System, u can Setup everything!</p></li>
-                      </ul>
-                      </div>
-                      <button class="acc-btn">
-                        How to flash Custom Recovery?
-                      </button>
-                      <div class="acc-content">
-                        <ul>
-                        <li><p>Download: ODIN or Heimdall, USB Drivers, TWRP.tar, VBMeta, DM-Verity to your PC.</p></li>
-                        <li><p>Extract ODIN or Heimdall, Install USB Drivers.</p></li>
-                        <li><p>Turn off your Phone.</p></li>
-                        <li><p>Hold Vol+ and Vol- together and plug your USB Cable in.</p></li>
-                        <li><p>Now a Blue Screen appears, Press Vol+ button.</p></li>
-                        <li><p>Open ODIN or Heimdall. Now u can see a blue COM Port detected. If not, reboot your Computer and force Restart your phone by hold vol+ and Power button until it reboots. Repeat step 3/4.</p></li>
-                        <li><p>Click on the AP Slot and seach your TWRP.tar and put in CP your VBMeta file, goto Options Tab, uncheck factory reset.</p></li>
-                        <li><p>Click Start. If u see a green sign with "PASSED" and the Phone reboots, is everything fine.</p></li>
-                        <li><p>Boot into TWRP by Poweroff your Phone and if u turn on hold powerkey + vol- until it boots into TWRP. After that, flash DM-Verity to Keep the TWRP on Phone.</p></li>
-                      </ul>
-                    </div>
-                      <button class="acc-btn">
-                        How to ROOT my Device?
-                      </button>
-                      <div class="acc-content">
-                        <ul>
-                        <li><p>Download: Magisk.zip and put it on your SD-Card.</p></li>
-                        <li><p>Reboot your Phone, until the Phone Screen goes black, hold Powerkey + vol- key to Enter TWRP.</p></li>
-                        <li><p>Click on Install, select the Magisk.zip, swipe to Install.</p></li>
-                        <li><p>Reboot your Phone.</p></li>
-                        <li><p>After u booted, Open Magisk APP and Wait until it finished.</p></li>
-                        <li><p>If everything fine, u are ROOTED now.</p></li>
-                      </ul>
-                      </div>
-                      <button class="acc-btn">
-                        How to flash a ROM if you coming from Stock?
-                      </button>
-                      <div class="acc-content">
-                        <ul>
-                        <li><p>Follow: How to Unlock Bootloader? and How to flash Custom Recovery?</p></li>
-                        <li><p>Download a ROM (optional GAPPS too) and put in on your Phone (SD-Card or Internal)</p></li>
-                        <li><p>Boot into Recovery</p></li>
-                        <li><p>Wipe DATA,CACHE,SYSTEM</p></li>
-                        <li><p>Go to Install > Select ROM Zip and Swipe for Flash</p></li>
-                        <li><p>Optional: Flash Magisk / GAPPS</p></li>
-                        <li><p>After flash is completed, reboot!</p></li>
-                      </ul>
-                      </div>
-                      <button class="acc-btn">
-                        How to Flash a ROM if you coming from Custom ROM?
-                      </button>
-                      <div class="acc-content">
-                        <ul>
-                        <li><p>Download a ROM (optional GAPPS too) and put in on your Phone (SD-Card or Internal)</p></li>
-                        <li><p>Boot into Recovery</p></li>
-                        <li><p>Wipe DATA,CACHE,SYSTEM</p></li>
-                        <li><p>Go to Install > Select ROM Zip and Swipe for Flash</p></li>
-                        <li><p>Optional: Flash Magisk / GAPPS</p></li>
-                        <li><p>After flash is completed, reboot!</p></li>
-                        </ul>
-                      </div>
-                  
-                      <button class="acc-btn">
-                        How to Report a BUG?
-                      </button>
-                      <div class="acc-content">
-                          <ul>
-                         <li><p>First go into Eureka Support or Device Specific group and ask if someone else have the same issue. If no one has this Issue, Download from PlayStore or APKPure Logcat App. (magisk needed)[PlayStore][APKPure]</p></li>
-                         <li><p>Open that App and press the Record button. (Accept ROOT Permissions)</p></li>
-                         <li><p>Reproduce the Issue (like force close app or something else)</p></li>
-                         <li><p>After that, press on Stop and send us your Log via Share!</p></li>
-                        </ul>
-                        </div>
-                  
-                      <button class="acc-btn">
-                        BSOD - Black Screen Of Death !
-                      </button>
-                      <div class="acc-content">
-                           <p style="color: white; font-size: 17px;">- You can't go into download or recovery mode? Well then, you are stuck in BSOD. Note: your phone is turned on but the screen is off (black) Bellow is how to fix.</p>
-                            <br>
-                            <ul>
-                                <li><p>Connect a usb cable to your pc but don't connect it to your phone yet!</p></li>
-                                <li><p>Force restart your phone by holding all buttons. As soon as you press buttons, start counting.</p></li>
-                                <li><p>The phone will vibrate about on the 12 secs</p></li>
-                                <li><p>Now, when your screen is black, hold all buttons and count again. When you reach 11 secs, quickly release all buttons and hold only power + vol up button. Also connect the usb cable to the phone.</p></li>
-                                <li><p>Your phone will then boot into download mode where u can flash stock firmware again. P.S: It's hard to get the right timing. So you have to keep trying till you are able to get it else you have to wait your battery to be 0% so that it turns off automatically..</p></li>
-                        </ul>
-                        </div>
-                      <button class="acc-btn">
-                        Bootloop?
-                      </button>
-                      <div class="acc-content">
-                        <p style="color: white; font-size: 17px;">- ROM Bootlooping at first Boot (or generally)?</p>
-                        <br>
-                        <ul>
-                        <li><p>Force restarting your Phone by Hold vol- and power about 12 Seconds.</p></li>
-                        <li><p>Boot via Combination into Recovery.</p></li>
-                        <li><p>Go into Terminal and type: 'touch data/debug/logcat' and 'touch data/debug/kmsg'.</p></li>
-                        <li><p>After that, reboot your Phone and wait one minute in the Bootloop and force restarting your Phone by Hold vol- and power about 12 Seconds.</p></li>
-                        <li><p>Boot again via Combination into Recovery and go into Filemanager and copy both files (kmsg,logcat) from data/debug/logs to your SD-Card</p></li>
-                        <li><p>Send us your Logs. (if u cannot wait, flash another ROM in this Time!)</p></li>
-                        <br>
-                        <p style="color: white; font-size: 17px;">- Bootloop after Magisk Module?</p>
-                        <br>
-                        <li><p>Force restarting your Phone by Hold vol- and power about 12 Seconds and boot into your Recovery by holding Key Combination.</p></li>
-                        <li><p>Mount System, Go into Filemanager and then into data/adb/modules and Delete the Folder which causes bootloop.</p></li>
-                        </ul>
-                      </div>
-                  
-                    </div>
-                  </main>
-
-            </section>
+                </div><< end here...--> 
+        </section>
         <main>
             <section class="content">
                 <section class="article-wrapper">
@@ -485,26 +317,6 @@
             </section>
         </main>
     </section>
-  <script>
-const btns = document.querySelectorAll(".acc-btn");
-
-// fn
-function accordion() {
-  // this = the btn | icon & bg changed
-  this.classList.toggle("is-open");
-
-  // the acc-content
-  const content = this.nextElementSibling;
-
-  // IF open, close | else open
-  if (content.style.maxHeight) content.style.maxHeight = null;
-  else content.style.maxHeight = content.scrollHeight + "px";
-}
-
-// event
-btns.forEach((el) => el.addEventListener("click", accordion));
-
-  </script>
 </body>
 </html>
 <script type="module" src="./js/main.js"></script>

@@ -3,6 +3,7 @@ $clr-blue: #2196F3;
 $clr-violette: #664caf;
 $clr-orange: #FF9800;
 $clr-red: #f44336;
+$clr-green: rgb(14, 124, 14);
 
 .wrap-content {
     min-height: calc(50vh - 64px);
@@ -57,7 +58,7 @@ article {
             }
 
             &.-yellow {
-                color: black;
+                color: white;
                 background: $clr-yellow;
             }
 
@@ -80,7 +81,10 @@ article {
                 color: white;
                 background: $clr-red;
             }
-
+            &.-green {
+                color: white;
+                background: $clr-green;
+            }
             &.-ghost {
                 background: transparent;
                 border: 2px solid #bababa;
@@ -88,7 +92,7 @@ article {
                 font-weight: 600;
 
                 &.-yellow {
-                    color: black;
+                    color:  $clr-yellow;
                     border-color: $clr-yellow;
                 }
 
@@ -110,6 +114,10 @@ article {
                 &.-red {
                     color: $clr-red;
                     border-color: $clr-red;
+                }
+                &.-green {
+                    color: $clr-green;
+                    border-color: $clr-green;
                 }
             }
         }
@@ -146,11 +154,10 @@ article {
 }
 
 .cards {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media (min-width: 600px) {
