@@ -1,9 +1,8 @@
-
 .card1 {
     color: rgb(255, 255, 255);
     width: 100%;
     border-radius: 2rem;
-    margin-top: -75px;  
+    margin-top: -75px;
     max-width: 100rem;
     overflow-y: hidden;
 }
@@ -11,12 +10,14 @@
 .hero {
     transform: translateY(-55%);
 }
+
 .hero .img {
-    filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
+    filter: drop-shadow(0rem 1.5rem rgba(0, 0, 0, 0.1));
     transition: 0.3s ease-out;
 }
+
 .card1:hover .img {
-    filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
+    filter: drop-shadow(0rem 2.5rem rgba(0, 0, 0, 0.1));
 }
 
 .title {
@@ -38,16 +39,20 @@
     color: white;
     font-weight: bold;
 }
+
 .acc-btn:after {
     content: "\27A4";
     color: #08f;
     float: right;
     transition: all 0.3s linear;
 }
+
 .acc-btn.is-open:after {
     transform: rotate(90deg);
 }
-.acc-btn:hover, .acc-btn.is-open {
+
+.acc-btn:hover,
+.acc-btn.is-open {
     color: #08f;
     font-weight: bold;
 }
