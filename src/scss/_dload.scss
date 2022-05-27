@@ -1,25 +1,25 @@
 .container3 {
-  max-width: 1335px;
-  margin: 0 auto;
-  margin-bottom: -185px;
+    max-width: 1335px;
+    margin: 0 auto;
+    margin-bottom: -185px;
 }
 
 .grid-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 .grid-item {
-  height: 490px;
-  flex-basis: 20%;
-  flex: auto;
-  width: 350px;
-  position: relative;
-  padding: 10px;
-  box-sizing: border-box;
-  text-align: center;
+    height: 490px;
+    flex-basis: 20%;
+    flex: auto;
+    width: 350px;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .dload_size {
@@ -35,7 +35,7 @@
 }
 
 .dload_info-fstp {
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .resize1 {
@@ -45,12 +45,12 @@
 }
 
 .grid-item-wrapper {
-  -webkit-box-sizing: initial;
-  -moz-box-sizing: initial;
-  box-sizing: initial;
-  background: rgb(0, 0, 0);
-  margin: 0;
-  height: 100%;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+    background: rgb(0, 0, 0);
+    margin: 0;
+    height: 100%;
 
 }
 
@@ -59,12 +59,15 @@
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 23%; /* Adjust this value to move the positioned div up and down */
+    top: 23%;
+    /* Adjust this value to move the positioned div up and down */
     text-align: center;
-    width: 60%; /* Set the width of the positioned div */
+    width: 60%;
+    /* Set the width of the positioned div */
     color: #08f;
     transform: rotate(-36deg);
 }
+
 .box-dl {
     overflow: auto;
     position: relative;
@@ -107,34 +110,38 @@ button {
 }
 
 
-   
-@media screen and (max-width: 900px) { 
-  .container3 {
-      width: 100px; 
-      flex: 2 2 25%;
-  }  
-  .resize1 {
-    max-width: 65%;
-    height: 180px;
-  }
-  .container3 .text {
-    top: 20%;
-    width: 80%;
-    transform: rotate(-40deg);
-}
-.dload_size {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 24px;
-}
 
-.dload_info {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 13px;
-}
-.grid-item {
-    height: 445px;
-}
+@media screen and (max-width: 900px) {
+    .container3 {
+        width: 100px;
+        flex: 2 2 25%;
+    }
+
+    .resize1 {
+        max-width: 65%;
+        height: 180px;
+    }
+
+    .container3 .text {
+        top: 20%;
+        width: 80%;
+        transform: rotate(-40deg);
+    }
+
+    .dload_size {
+        color: white;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .dload_info {
+        color: white;
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+
+    .grid-item {
+        height: 445px;
+    }
 
 }
