@@ -9,8 +9,8 @@
   position: relative;
 }
 .error-container > span.four {
-  width: 136px;
-  height: 43px;
+  width: 116px;
+  height: 23px;
   border-radius: 999px;
   background:
     linear-gradient(140deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.07) 43%, transparent 44%, transparent 100%),
@@ -25,8 +25,8 @@
   border-radius: 999px;
 }
 .error-container > span.four:before {
-  width: 43px;
-  height: 156px;
+  width: 23px;
+  height: 136px;
   left: 60px;
   bottom: -43px;
   background:
@@ -35,8 +35,8 @@
     linear-gradient(to top, #08f, #08f, #08f, #08f, #08f);
 }
 .error-container > span.four:after {
-  width: 137px;
-  height: 43px;
+  width: 117px;
+  height: 23px;
   transform: rotate(-49.5deg);
   left: -18px;
   bottom: 36px;
@@ -45,21 +45,22 @@
 
 .error-container > span.zero {
   vertical-align: text-top;
-  width: 156px;
-  height: 156px;
+  width: 106px;
+  height: 106px;
   border-radius: 999px;
   background: linear-gradient(-45deg, transparent 0%, rgba(0, 0, 0, 0.06) 50%,  transparent 51%, transparent 100%),
     linear-gradient(to top right, #08f, #08f, #08f, #08f, #08f, #08f, #08f);
   overflow: hidden;
   animation: bgshadow 5s infinite;
+  top: 35px;
 }
 .error-container > span.zero:before {
   content: '';
   display: block;
   position: absolute;
   transform: rotate(45deg);
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   background-color: transparent;
   left: 0px;
   bottom: 0px;
@@ -72,8 +73,8 @@
   display: block;
   position: absolute;
   border-radius: 999px;
-  width: 70px;
-  height: 70px;
+  width: 20px;
+  height: 20px;
   left: 43px;
   bottom: 43px;
   background: #FDFAF5;

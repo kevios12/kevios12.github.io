@@ -21,6 +21,7 @@
     flex-direction: column;
     border-radius: 2px;
     margin: -40px 20px;
+    margin-top: 0px;
   }
 }
 
@@ -68,7 +69,7 @@
 
 @media screen and (max-width: 700px) {
   .pxc-avatar img {
-    margin-top: 95px;
+    margin-top: 120px;
     transform: rotate(90deg);
   }
 }

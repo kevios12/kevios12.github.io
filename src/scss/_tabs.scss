@@ -22,7 +22,7 @@
 
 .title {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4.0rem;
     padding: 1rem;
 }
 
@@ -55,6 +55,8 @@
 .acc-btn.is-open {
     color: #08f;
     font-weight: bold;
+    background-color: rgba(0, 136, 255, 0);
+    transform: scale(1.0);
 }
 
 .acc-content {

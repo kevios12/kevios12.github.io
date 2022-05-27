@@ -1,5 +1,3 @@
-import './../scss/style.scss'
-
 //splash animation//
 const splash = document.querySelector('.splash');
 document.addEventListener('DOMContentLoaded', (e) => {
