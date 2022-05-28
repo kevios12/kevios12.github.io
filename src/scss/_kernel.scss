@@ -81,10 +81,12 @@ article {
                 color: white;
                 background: $clr-red;
             }
+
             &.-green {
                 color: white;
                 background: $clr-green;
             }
+
             &.-ghost {
                 background: transparent;
                 border: 2px solid #bababa;
@@ -92,7 +94,7 @@ article {
                 font-weight: 600;
 
                 &.-yellow {
-                    color:  $clr-yellow;
+                    color: $clr-yellow;
                     border-color: $clr-yellow;
                 }
 
@@ -115,6 +117,7 @@ article {
                     color: $clr-red;
                     border-color: $clr-red;
                 }
+
                 &.-green {
                     color: $clr-green;
                     border-color: $clr-green;
