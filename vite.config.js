@@ -18,6 +18,7 @@ export default defineConfig({
                 kernel: resolve(__dirname, "./src/kernel.html"),
                 guide: resolve(__dirname, "./src/guide.html"),
                 download: resolve(__dirname, "./src/download.html"),
+                stats: resolve(__dirname, "./src/statistics.html"),
                 404: resolve(__dirname, "./src/404.html"),
             },
         },
