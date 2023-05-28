@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/5268d20594.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-7721a953.ico">
+    <title>About Kevios12</title>
+    <script type="module" crossorigin src="/assets/js/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/jquery-3baa1334.js">
+    <link rel="stylesheet" href="/assets/css/index.css">
+  </head>
+  <body>
+    <div class="loader"></div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i
+              class="fa fa-bars"
+              aria-hidden="true"
+              style="color: #e6e6ff; margin-top: 5px"
+            ></i
+          ></span>
+        </button>
+        <img
+          class="mirror"
+          src="/assets/images/logo.png"
+          alt="Bootstrap"
+          width="36"
+          height="64"
+          style="margin-left: -10px"
+        />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#pg3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                >Teams & Official Stuff</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#pg2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                >My Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#pg1"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                >My Inventory</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#pg0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                >Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="alert alert-success alert-mobile" id="alerto" style="display: none; top: 70px;" role="alert">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        <strong>You will be redirected shorty ...</strong>
+      </div>
+      <div class="section-pages bg" data-bs-spy="scroll">
+        <section class="one" id="pg0">
+          <article class="appear2">
+            <img
+              src="https://avatars.githubusercontent.com/u/10536991?v=4"
+              style="width: 186px; height: 186px"
+            />
+            <h1>Welcome To My Site</h1>
+            <p>
+              here is a test text and test text are very nice and cool. So yeah
+              let me know .... what ever idk ....
+            </p>
+            <p>
+              Oh yeah that might be funny or not? Who know it, me not...
+              sure....this is a another test text kekw ....
+            </p>
+            <div class="social-badges">
+              <i class="fa-brands fa-telegram" id="tg"></i>
+              <i class="fa-brands fa-github" id="gh"></i>
+            </div>
+          </article>
+        </section>
+        <section class="two" id="pg1">
+          <div class="card-container1 appear">
+            <div class="card1 appear2">
+              <a onclick="redirect1()">
+                <img src="/assets/images/7t.png" alt="7t" id="result"/>
+              </a>
+              <div class="card-content1">
+                <h3 class="op">Oneplus 7T</h3>
+                <h1>Released: 27.09.2019</h1>
+                <h1>Owned: 06.09.2022</h1>
+                <h1>Codename: hotdogb</h1>
+                <h1>RAM/Storage: 8/256GB</h1>
+                <h1>SOC: Snapdragon 855+</h1>
+                <h1>GPU/Display: Adreno 640-90Hz Amoled FHD+</h1>
+                <h1>Bootloader: Unlocked</h1>
+                <h1>OS: Custom ROM - Android 13</h1>
+              </div>
+            </div>
+            <div class="card1 appear2">
+              <a onclick="redirect()">
+                <img src="/assets/images/a40.png" alt="a40" id="result"/>
+              </a>
+              <div class="card-content1">
+                <h3>Samsung A40</h3>
+                <h1>Released: 04.2019</h1>
+                <h1>Owned: 06.10.2020</h1>
+                <h1>Codename: a40,a40dd</h1>
+                <h1>RAM/Storage: 4/64GB</h1>
+                <h1>SOC: Exynos7904</h1>
+                <h1>GPU/Display: Mali G71MP2-60Hz Amoled FHD</h1>
+                <h1>Bootloader: Unlocked</h1>
+                <h1>OS: Custom ROM - Android 13</h1>
+              </div>
+            </div>
+            <div class="card1 appear2">
+              <a href="#myModal" data-bs-toggle="modal"
+                ><img src="/assets/images/pc.png" alt="pc"
+              /></a>
+              <div class="card-content1 pc">
+                <h3>My Computer</h3>
+                <h1>Mainboard: ASUS Rampage II Extreme</h1>
+                <h1>CPU: Intel XEON X5670 - 6c/12t@2,93Ghz</h1>
+                <h1>GPU: Nvidia Geforce GT640 OEM 1GB GDDR3</h1>
+                <h1>RAM: 24GB DDR3 G.Skill RipjawsX Intel XMP</h1>
+                <h1>Storage: 240GB SSD / 1TB HDD</h1>
+                <h1>Display: Fujitsu Siemens DVI / ASUS HDMI</h1>
+                <h1>Resolution: 1680x1050 / 1920x1080</h1>
+                <h1>Corsair Keyb. Red Switches, Log.G203 Mouse</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">My Computer</h4>
+              </div>
+              <div class="modal-body">
+                <iframe src="./sysreport.HTM" seamless></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="three" id="pg2">
+          <div class="container-skills appear2">
+            <div class="box appear2">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#E44D26"
+                  d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
+                ></path>
+                <path
+                  fill="#F16529"
+                  d="M64 116.8l36.378-10.086 8.559-95.878H64z"
+                ></path>
+                <path
+                  fill="#EBEBEB"
+                  d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
+                ></path>
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">Full</span> a formatting system for
+                  displaying material retrieved over the Internet. Each
+                  retrieval unit is known as a Web page, and such pages
+                  frequently contain hypertext links that allow related pages to
+                  be retrieved.
+                </p>
+              </div>
+              <div class="box3">
+                <ul class="html">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="HideOne"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="box appear2">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#1572B6"
+                  d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
+                ></path>
+                <path
+                  fill="#33A9DC"
+                  d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
+                ></path>
+                <path
+                  fill="#EBEBEB"
+                  d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
+                ></path>
+                <path
+                  fill="#EBEBEB"
+                  d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
+                ></path>
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">CSS</span> (Cascading Style Sheets)
+                  is used to style and layout web pages — for example, to alter
+                  the font, color, size, and spacing of your content, split it
+                  into multiple columns, or add animations and other decorative
+                  features.
+                </p>
+              </div>
+              <div class="box3">
+                <ul class="css">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="HideOne"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="box appear2">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#F0DB4F"
+                  d="M1.408 1.408h125.184v125.185H1.408z"
+                ></path>
+                <path
+                  fill="#323330"
+                  d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
+                ></path>
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">An</span> open-source progr. lang. It
+                  is designed for creating web-centric applications. It is
+                  lightweight and interpreted, which makes it much faster than
+                  other languages. JS is integrated with HTML, which makes it
+                  easier to implement JS in web apps.
+                </p>
+              </div>
+              <div class="box3">
+                <ul class="js">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="HideOne"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="box appear2">
+              <svg viewBox="0 0 128 128">
+                <linearGradient
+                  id="python-original-a"
+                  gradientUnits="userSpaceOnUse"
+                  x1="70.252"
+                  y1="1237.476"
+                  x2="170.659"
+                  y2="1151.089"
+                  gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
+                >
+                  <stop offset="0" stop-color="#5A9FD4"></stop>
+                  <stop offset="1" stop-color="#306998"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="python-original-b"
+                  gradientUnits="userSpaceOnUse"
+                  x1="209.474"
+                  y1="1098.811"
+                  x2="173.62"
+                  y2="1149.537"
+                  gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
+                >
+                  <stop offset="0" stop-color="#FFD43B"></stop>
+                  <stop offset="1" stop-color="#FFE873"></stop>
+                </linearGradient>
+                <path
+                  fill="url(#python-original-a)"
+                  d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"
+                  transform="translate(0 10.26)"
+                ></path>
+                <path
+                  fill="url(#python-original-b)"
+                  d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"
+                  transform="translate(0 10.26)"
+                ></path>
+                <radialGradient
+                  id="python-original-c"
+                  cx="1825.678"
+                  cy="444.45"
+                  r="26.743"
+                  gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop
+                    offset="0"
+                    stop-color="#B8B8B8"
+                    stop-opacity=".498"
+                  ></stop>
+                  <stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop>
+                </radialGradient>
+                <path
+                  opacity=".444"
+                  fill="url(#python-original-c)"
+                  d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"
+                ></path>
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">Interpreted</span>, object-oriented,
+                  high-level progr. lang. with dynamic semantics developed by
+                  Guido van Rossum. It was released in 1991. Designed to be easy
+                  as well as fun, the name "Python" is a nod to the British
+                  comedy group Monty.
+                </p>
+              </div>
+              <div class="box3">
+                <ul class="python">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="HideOne"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="box appear2">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill="#659AD3"
+                  d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"
+                ></path>
+                <path
+                  fill="#03599C"
+                  d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"
+                ></path>
+                <path
+                  fill="#fff"
+                  d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"
+                ></path>
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">C</span> is a procedure-oriented
+                  programming language. C++ is a partially object-oriented
+                  programming language. It follows a top-down approach. It
+                  follows a bottom-up approach. C doesn't support function or
+                  operator overloading.
+                </p>
+              </div>
+              <div class="box3">
+                <ul class="cplus">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="HideOne"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="box appear2">
+              <svg viewBox="0 0 128 128">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  fill="#80B5E2"
+                  d="M50.246 41.616c-3.682-.925-7.369-.628-11.26-.022 0 6.805-.014 13.427.037 20.05.002.339.511.929.841.974 4.243.573 8.463.619 12.431-1.315 4.105-2 6.196-6.182 5.654-11.092-.492-4.471-3.139-7.448-7.703-8.595zM127 63.963V3.285c0-2.096.023-2.285-2.012-2.285H3.479C1.5 1 1 1.19 1 3.186v121.509c0 2.018.252 2.021 2.209 2.021 40.555.001 81.231-.009 121.786.037 1.573.002 1.995-.417 1.991-1.959-.054-20.277.014-40.556.014-60.831zm-70.648 5.84C50.795 71.785 45 71.896 39 71.431V94H28v-1.402c0-18.895-.087-37.788-.14-56.682-.006-1.569.243-2.327 2.011-2.507 8.332-.852 16.617-1.81 24.902.133 8.906 2.087 14.041 7.975 14.431 16.11.483 10.074-3.944 16.974-12.852 20.151zm44.31 12.754c-.424 5.771-3.678 9.56-9.015 11.392-7.142 2.452-14.245 1.883-21.225-.891-1.143-.455-1.364-1.031-.987-2.196.687-2.126 1.19-4.312 1.72-6.286 2.951.866 5.757 1.947 8.664 2.458 2.053.361 4.272.149 6.359-.178 1.871-.294 3.217-1.564 3.524-3.572.312-2.041-.303-3.809-2.105-4.895-1.432-.862-3.01-1.479-4.523-2.202-2.433-1.163-5.026-2.075-7.27-3.53-8.831-5.727-5.956-16.383-.063-20.396 3.153-2.146 6.642-3.098 10.377-3.229 4.393-.154 8.623.604 12.778 2.623l-2.195 7.789c-1.74-.616-3.36-1.416-5.07-1.734-2.029-.378-4.157-.589-6.205-.422-2.746.225-4.354 2.12-4.354 4.47 0 1.392.528 2.57 1.689 3.245 1.666.969 3.434 1.768 5.186 2.579 1.896.877 3.898 1.551 5.723 2.552 4.87 2.67 7.405 6.8 6.992 12.423z"
+                ></path>
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">Photoshop</span> is an image
+                  creation, graphic design and photo editing software developed
+                  by Adobe. The software provides many image editing features
+                  for pixel-based images, raster graphics and vector graphics.
+                </p>
+              </div>
+              <div class="box3">
+                <ul class="photoshop">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li class="HideOne"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="four" id="pg3">
+          <div class="container-ct appear2">
+            <h1>Teams & Official Stuff</h1>
+            <div class="box appear2" id="mobile">
+              <svg
+                id="Ebene_1"
+                data-name="Ebene 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 190.53 188.4"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #f9f9f9;
+                    }
+                    .cls-2 {
+                      fill: #1376ed;
+                    }
+                  </style>
+                </defs>
+                <polyline
+                  class="cls-1"
+                  points="125.2 0 0 0 0 188.4 125.2 188.4 96.2 138.4 45.2 138 45.2 119 86.2 119 72.4 94.2 85.2 71 45.2 71 45.2 49 96.2 48.93"
+                />
+                <polyline
+                  class="cls-1"
+                  points="138.27 0 85.2 94.2 138.27 188.4 190.53 188.4 137.87 95 189.2 0"
+                />
+                <g id="Ebene_2" data-name="Ebene 2">
+                  <polyline
+                    class="cls-2"
+                    points="142.53 12 172.4 12 127.6 94.53 175.07 177.07 142.2 177 96.2 95"
+                  />
+                </g>
+                <polyline
+                  class="cls-2"
+                  points="9.2 12 106.8 12 92.2 38 37.47 38 37.2 80 71.07 80 62.53 95 70.2 107 37.47 107 37.2 150 90.8 150 106.8 177.07 9.2 177"
+                />
+              </svg>
+              <div class="box2">
+                <p>
+                  <span class="biggerText">Eurekadevelopment</span> is an
+                  Android Community for Samsung Galaxy A Series (Exynos7885)
+                  Devices. For an Example which Devices are listed: Galaxy
+                  A10,A20,A30,A30s,A40. This Project/Team exists since 2021.
+                </p>
+                <p></p>
+              </div>
+              <div class="box3"></div>
+            </div>
+            <div class="box" id="mobile">
+              <img src="/assets/images/ancient-orange-yellow.png" />
+              <div class="box2 appear2">
+                <p>
+                  <span class="biggerText">Ancient OS</span> is a Custom ROM for
+                  Android, based on AOSP. Ancient OS exists since Android 10.
+                  Some Guys seen this ROM as 'Gore' due to a lot of
+                  Customizations. Their are Popular and his source is private.
+                  Our Builds are only Official.
+                </p>
+              </div>
+              <div class="box3"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Copyright © Kevios12</p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+      const appear = document.querySelector(".appear");
+      const cb = function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("inview");
+          } else {
+            entry.target.classList.remove("inview");
+          }
+        });
+      };
+      const io = new IntersectionObserver(cb);
+      io.observe(appear);
+
+      const items = document.querySelectorAll(".appear2");
+
+      const active = function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("inview2");
+          } else {
+            entry.target.classList.remove("inview2");
+          }
+        });
+      };
+      const io2 = new IntersectionObserver(active);
+      for (let i = 0; i < items.length; i++) {
+        io2.observe(items[i]);
+      }
+
+      const appear3 = document.querySelector(".appear3");
+      const cb3 = function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("inview");
+            entry.unobserve(entry.target);
+          }
+        });
+      };
+      const io3 = new IntersectionObserver(cb3);
+      io3.observe(appear3);
+    </script>
+       <script type="text/javascript">
+        function redirect () {
+           setTimeout(a40, 3000);
+           successfully();
+        }
+        function redirect1() {
+           setTimeout(op7t, 3000);
+           successfully();
+        }
+        function a40() {
+           document.location.href = 'https://www.gsmarena.com/samsung_galaxy_a40-9642.php';
+        }
+        function op7t() {
+           document.location.href = 'https://www.gsmarena.com/oneplus_7t-9816.php';
+        }
+        function successfully() {
+          var x = document.getElementById("alerto");
+          if (x.style.display === "none") {
+              x.style.display = "block";
+          } else {
+              x.style.display = "none";
+         }
+        }
+     </script>
+    
+  </body>
+</html>
