@@ -1,0 +1,23 @@
+{
+  "name": "kevios12web",
+  "private": false,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://kevios12.github.io",
+  "devDependencies": {
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
+    "jquery": "^3.6.4",
+    "sass": "^1.59.3",
+    "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0"
+  }
+}
