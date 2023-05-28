@@ -561,6 +561,7 @@
       io3.observe(appear3);
     </script>
        <script type="text/javascript">
+        var alertDialog = document.getElementById("alerto");
         function redirect () {
            setTimeout(a40, 3000);
            successfully();
@@ -571,17 +572,21 @@
         }
         function a40() {
            document.location.href = 'https://www.gsmarena.com/samsung_galaxy_a40-9642.php';
+           setTimeout(hide, 1000);
         }
         function op7t() {
            document.location.href = 'https://www.gsmarena.com/oneplus_7t-9816.php';
+           setTimeout(hide, 1000);
+        }
+        function hide () {
+          alertDialog.style.display = "none";
         }
         function successfully() {
-          var x = document.getElementById("alerto");
-          if (x.style.display === "none") {
-              x.style.display = "block";
+          if (alertDialog.style.display === "none") {
+            alertDialog.style.display = "block";
           } else {
-              x.style.display = "none";
-         }
+            alertDialog.style.display = "none";
+         } 
         }
      </script>
     <script type="module" src="./js/main.js" defer></script>
