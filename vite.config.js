@@ -21,6 +21,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
               index: resolve(__dirname, "./src/index.html"),
+              sysreport: resolve(__dirname, "./src/sysreport.html"),
               jquery: resolve(__dirname, "./node_modules/jquery/dist/jquery")
             },
             output: {
