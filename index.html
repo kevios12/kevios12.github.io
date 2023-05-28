@@ -575,11 +575,14 @@
         }
         function a40() {
            document.location.href = 'https://www.gsmarena.com/samsung_galaxy_a40-9642.php';
-           alertDialog.style.display = "none";
+           setTimeout(hide, 1000);
         }
         function op7t() {
            document.location.href = 'https://www.gsmarena.com/oneplus_7t-9816.php';
-           alertDialog.style.display = "none";
+           setTimeout(hide, 1000);
+        }
+        function hide () {
+          alertDialog.style.display = "none";
         }
         function successfully() {
           if (alertDialog.style.display === "none") {
